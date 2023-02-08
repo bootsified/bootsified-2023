@@ -1,6 +1,4 @@
 .wrapper {
-  --header-background: #121212;
-
   background-color: var(--header-background);
   color: var(--text-reverse);
 }
@@ -37,7 +35,7 @@
 
   &:hover {
     & svg {
-      transform: rotate(-5deg) scale(1.05);
+      transform: rotate(-2.5deg) scale(1.1);
     }
   }
 }

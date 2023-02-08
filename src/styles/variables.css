@@ -61,6 +61,8 @@
   --color-placeholder: var(--gray-4);
   --background: var(--gray-1);
   --background-contrast: var(--gray-0);
+  --header-background: #121212;
+  --footer-background: #595959;
 
   /* text colors */
   --text: var(--gray-7);
@@ -76,6 +78,7 @@
   /* font families */
   --font-family-base: "Mona Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   --font-family-heading: "Righteous", "Helvetica Neue", helvetica, arial, sans-serif;
+  --font-family-hand: "Gochi Hand", "Helvetica Neue", helvetica, arial, sans-serif;
 
   /* container */
   --container-side-padding: 1rem;

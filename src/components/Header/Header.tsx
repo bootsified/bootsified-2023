@@ -1,12 +1,17 @@
 import React from 'react'
 import Signature from '@assets/images/boots-signature.svg'
+import clsx from 'clsx'
 import Link from 'next/link'
 
 import styles from './Header.module.css'
 
-const Header = () => {
+type HeaderProps = {
+  className: string
+}
+
+const Header = ({ className }: HeaderProps) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={clsx(styles.wrapper, className)}>
       <div className={styles.container}>
         <div className={styles.branding}>
           <Link href="/">
