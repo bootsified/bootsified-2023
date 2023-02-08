@@ -1,0 +1,78 @@
+.wrapper {
+  --header-background: #121212;
+
+  background-color: var(--header-background);
+  color: var(--text-reverse);
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 7.5rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: var(--container-width-lg);
+  padding-left: var(--container-side-padding);
+  padding-right: var(--container-side-padding);
+  position: relative;
+}
+
+.branding {
+  position: relative;
+  z-index: 1;
+
+  & svg {
+    display: block;
+    margin: 0 auto;
+    transition: all 150ms ease;
+
+    & [class*="signature"] {
+      fill: #fff;
+    }
+
+    & [class*="border"] {
+      fill: var(--header-background);
+    }
+  }
+
+  &:hover {
+    & svg {
+      transform: rotate(-5deg) scale(1.05);
+    }
+  }
+}
+
+.stripes {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 200ms ease;
+  width: 70%;
+  z-index: 0;
+
+  @nest :hover + & {
+    width: 80%;
+
+    & .stripe {
+      background-color: var(--color-pri);
+    }
+  }
+}
+
+.stripe {
+  background-color: #fff3;
+  border-radius: 2px;
+  height: 4px;
+  margin: 8px auto;
+  transition: background-color 150ms ease;
+  width: 100%;
+
+  &:nth-child(2) {
+    width: calc(100% - 4rem);
+  }
+
+  &:nth-child(3) {
+    width: calc(100% - 8rem);
+  }
+}

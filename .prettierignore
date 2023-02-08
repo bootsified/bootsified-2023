@@ -1,0 +1,9 @@
+.github
+.husky
+.cache
+.next
+package.json
+yarn.lock
+public
+build
+node_modules

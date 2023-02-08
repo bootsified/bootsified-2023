@@ -1,0 +1,142 @@
+:root {
+  /* colors */
+  --gray-0: #f9f9f9;
+  --gray-05: #f6f6f6;
+  --gray-1: #eee;
+  --gray-2: #e6e6e6;
+  --gray-3: #ddd;
+  --gray-4: #bbb;
+  --gray-5: #999;
+  --gray-6: #666;
+  --gray-65: #555;
+  --gray-7: #2c2c2c;
+  --gray-8: #252525;
+  --gray-9: #1f1f1f;
+  --gray-10: #181818;
+  --green: #14ae73;
+  --green-1: #95cd7f;
+  --green-2: #73b18a;
+  --green-3: #4d8994;
+  --green-4: #30619d;
+  --green-5: #30379d;
+  --red: #f34646;
+  --red-1: #fdd94a;
+  --red-2: #e0a944;
+  --red-3: #d37d36;
+  --red-4: #cd583c;
+  --red-5: #ab2e3f;
+  --blue: #07a7e6;
+  --blue-1: #70bdee;
+  --blue-2: #618be1;
+  --blue-3: #5b5ed5;
+  --blue-4: #623ac6;
+  --blue-5: #58119f;
+  --rainbow-1: #ff67f7;
+  --rainbow-2: #9b78fa;
+  --rainbow-3: #59abf7;
+  --rainbow-4: #5eddac;
+  --rainbow-5: #f6cd5d;
+  --orange: #ff7e22;
+  --yellow: #fca62a;
+  --pink: #f57ad0;
+  --purple: #673ece;
+  --indigo: #5a43f1;
+  --indigo-dark: #4509cf;
+  --indigo-light: #969bf6;
+  --indigo-muted: #f1f2fd;
+
+  /* brand colors */
+  --color-pri: #b00075;
+  --color-pri-90: #b81a83;
+  --color-pri-80: #c03391;
+  --color-pri-70: #c84d9e;
+  --color-pri-60: #d066ac;
+  --color-pri-50: #d880ba;
+  --color-pri-40: #df99c8;
+  --color-pri-30: #e7b3d6;
+  --color-pri-20: #efcce3;
+  --color-pri-10: #f7e6f1;
+  --color-error: var(--red-5);
+  --color-success: var(--green-3);
+  --color-placeholder: var(--gray-4);
+  --background: var(--gray-1);
+  --background-contrast: var(--gray-0);
+
+  /* text colors */
+  --text: var(--gray-7);
+  --text-subdued: var(--gray-6);
+  --text-disabled: var(--gray-5);
+  --text-reverse: var(--gray-0);
+
+  /* border colors */
+  --border-color: var(--gray-3);
+  --border-color-hover: var(--gray-6);
+  --border-color-focus: var(--gray-9);
+
+  /* font families */
+  --font-family-base: "Mona Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  --font-family-heading: "Righteous", "Helvetica Neue", helvetica, arial, sans-serif;
+
+  /* container */
+  --container-side-padding: 1rem;
+
+  @media (min-width: 740px) {
+    --container-side-padding: 2rem;
+  }
+
+  --container-width-sm: 48rem;
+  --container-width-md: 58rem;
+  --container-width-lg: 72.5rem;
+  --container-width-xl: 100.625rem;
+  --container-width-2xl: 117.75rem;
+
+  /* Easing - See https://easings.net/ */
+  --ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  --ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+  --ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  --ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+  --ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  --ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  --ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+  --ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715);
+  --ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+  --ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  --ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  --ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* misc */
+  --hover-duration: 200ms;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --color-error: var(--red-5);
+    --color-success: var(--green-3);
+    --color-placeholder: var(--gray-4);
+    --background: var(--gray-10);
+    --background-contrast: var(--gray-9);
+    --text: var(--gray-0);
+    --text-subdued: var(--gray-4);
+    --text-disabled: var(--gray-6);
+    --text-reverse: var(--gray-10);
+    --border-color: var(--gray-3);
+    --border-color-hover: var(--gray-6);
+    --border-color-focus: var(--gray-9); */
+
+    color-scheme: dark;
+  }
+}
