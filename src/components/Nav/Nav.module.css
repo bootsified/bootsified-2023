@@ -38,6 +38,7 @@
     font-weight: 500;
     height: 2.25em;
     letter-spacing: 0.1em;
+    overflow: hidden;
     padding: 0 1em;
     position: relative;
     text-decoration: none;
@@ -45,14 +46,19 @@
     z-index: 0;
 
     &::before {
-      background-color: #121212;
+      aspect-ratio: 9 / 13;
+
+      /* background-color: #f00; */
+      background-image: url("/images/drips-nav.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
       content: " ";
       display: block;
-      height: 0%;
       left: 0;
       position: absolute;
       top: 0;
-      transition: height 150ms ease;
+      transform: translateY(-100%);
+      transition: transform 500ms var(--ease-out-cubic);
       width: 100%;
       z-index: -1;
     }
@@ -60,7 +66,9 @@
     &.isActive,
     &:hover {
       &::before {
-        height: 100%;
+        transform: translateY(0);
+        transition-duration: 750ms;
+        transition-timing-function: var(--ease-in-cubic);
       }
     }
   }

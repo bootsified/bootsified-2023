@@ -18,6 +18,11 @@ const Nav = ({ className }: NavProps) => {
     <nav className={clsx(styles.wrapper, className)}>
       <ul className={styles.list}>
         <li className={styles.item}>
+          <Link href="/" className={pathname === '/' ? styles.isActive : ''}>
+            Home
+          </Link>
+        </li>
+        <li className={styles.item}>
           <Link href="/about" className={pathname === '/about' ? styles.isActive : ''}>
             About
           </Link>
