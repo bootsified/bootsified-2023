@@ -14,16 +14,20 @@
   &::after {
     background-image: url("/images/drips-lite.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
     content: " ";
     display: block;
+    font-size: 0.8rem;
     height: 3.5em;
+    left: 0;
     pointer-events: none;
     position: absolute;
-    right: 0;
     top: -4px;
     width: 8.625em;
 
     @media screen and (min-width: 740px) {
+      font-size: 1rem;
+      left: auto;
       right: 20%;
     }
   }
@@ -53,7 +57,7 @@
 .madeWith {
   font-size: 0.875em;
   font-stretch: 75%;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   margin-bottom: 0;
   padding-bottom: 0.25em;
 
@@ -78,10 +82,9 @@
 }
 
 .splat {
-  margin-bottom: 0.5rem;
-
   & svg {
     display: inline-block;
+    margin-bottom: 1rem;
     transition: all 150ms var(--ease-out-back);
 
     & [class*="_splat"] {
