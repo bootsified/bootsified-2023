@@ -68,7 +68,7 @@
       position: absolute;
       top: 0;
       transform: translateY(-100%);
-      transition: transform 500ms var(--ease-out-cubic);
+      transition: transform 500ms var(--ease-out-sine);
       width: 100%;
       z-index: -1;
     }
@@ -78,7 +78,7 @@
       &::before {
         transform: translateY(0);
         transition-duration: 750ms;
-        transition-timing-function: var(--ease-in-cubic);
+        transition-timing-function: var(--ease-in-sine);
       }
     }
   }
