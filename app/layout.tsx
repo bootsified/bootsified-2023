@@ -1,7 +1,7 @@
 import Footer from '@components/Footer'
 import Header from '@components/Header'
 import Nav from '@components/Nav'
-import { Gochi_Hand, Righteous } from '@next/font/google'
+import { Righteous } from '@next/font/google'
 import Link from 'next/link'
 
 import 'what-input'
@@ -10,11 +10,6 @@ import '@styles/globals.css'
 import styles from '@styles/RootLayout.module.css'
 
 const righteous = Righteous({
-  weight: ['400'],
-  subsets: ['latin'],
-})
-
-const gochiHand = Gochi_Hand({
   weight: ['400'],
   subsets: ['latin'],
 })

@@ -1,9 +1,15 @@
 import React from 'react'
 import Splat from '@assets/images/logo-splat.svg'
+import { Gochi_Hand } from '@next/font/google'
 import clsx from 'clsx'
 import Link from 'next/link'
 
 import styles from './Footer.module.css'
+
+const gochiHand = Gochi_Hand({
+  weight: ['400'],
+  subsets: ['latin'],
+})
 
 type FooterProps = {
   className: string
@@ -20,7 +26,7 @@ const Footer = ({ className }: FooterProps) => {
           <Link href="/" className={styles.splat}>
             <Splat />
           </Link>
-          <p>
+          <p className={gochiHand.className}>
             <span className={styles.group}>They&rsquo;re not booing...</span>{' '}
             <span className={styles.group}>
               They&rsquo;re chanting &ldquo;BOOOOOOOOTS!!!&rdquo;
