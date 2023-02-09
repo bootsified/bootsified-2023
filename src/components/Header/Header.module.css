@@ -7,12 +7,17 @@
     background-image: url("/images/drips-dark.svg");
     background-repeat: no-repeat;
     content: " ";
-    display: block;
+    display: none;
     height: 3.5rem;
+    pointer-events: none;
     position: absolute;
     right: 0;
     top: 98%;
     width: 8.625rem;
+
+    @media screen and (min-width: 740px) {
+      display: block;
+    }
   }
 }
 
@@ -59,8 +64,12 @@
   top: 50%;
   transform: translate(-50%, -50%);
   transition: width 200ms ease;
-  width: 70%;
+  width: 90%;
   z-index: 0;
+
+  @media screen and (min-width: 700px) {
+    width: 70%;
+  }
 
   @nest :hover + & {
     width: 80%;
@@ -80,10 +89,18 @@
   width: 100%;
 
   &:nth-child(2) {
-    width: calc(100% - 4rem);
+    width: calc(100% - 3rem);
+
+    @media screen and (min-width: 700px) {
+      width: calc(100% - 4rem);
+    }
   }
 
   &:nth-child(3) {
-    width: calc(100% - 8rem);
+    width: calc(100% - 6rem);
+
+    @media screen and (min-width: 700px) {
+      width: calc(100% - 8rem);
+    }
   }
 }

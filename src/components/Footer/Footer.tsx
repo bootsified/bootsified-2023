@@ -21,8 +21,10 @@ const Footer = ({ className }: FooterProps) => {
             <Splat />
           </Link>
           <p>
-            <span className="group">They&rsquo;re not booing...</span>{' '}
-            <span className="group">They&rsquo;re chanting &ldquo;BOOOOOOOOTS!!!&rdquo;</span>
+            <span className={styles.group}>They&rsquo;re not booing...</span>{' '}
+            <span className={styles.group}>
+              They&rsquo;re chanting &ldquo;BOOOOOOOOTS!!!&rdquo;
+            </span>
           </p>
         </div>
         <p className={styles.madeWith}>
