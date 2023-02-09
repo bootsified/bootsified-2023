@@ -1,6 +1,19 @@
 .wrapper {
   background-color: var(--header-background);
   color: var(--text-reverse);
+  position: relative;
+
+  &::after {
+    background-image: url("/images/drips-dark.svg");
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 3.5rem;
+    position: absolute;
+    right: 0;
+    top: 98%;
+    width: 8.625rem;
+  }
 }
 
 .container {

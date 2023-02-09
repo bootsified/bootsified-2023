@@ -1,6 +1,7 @@
 import React from 'react'
 import Splat from '@assets/images/logo-splat.svg'
 import clsx from 'clsx'
+import Link from 'next/link'
 
 import styles from './Footer.module.css'
 
@@ -16,7 +17,9 @@ const Footer = ({ className }: FooterProps) => {
       <div className={styles.container}>
         <p className={styles.copyright}>&copy; {year} Bootsified</p>
         <div className={styles.splatText}>
-          <Splat />
+          <Link href="/" className={styles.splat}>
+            <Splat />
+          </Link>
           <p>
             <span className="group">They&rsquo;re not booing...</span>{' '}
             <span className="group">They&rsquo;re chanting &ldquo;BOOOOOOOOTS!!!&rdquo;</span>

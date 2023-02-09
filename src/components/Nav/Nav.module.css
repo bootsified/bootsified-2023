@@ -1,10 +1,25 @@
 .wrapper {
   background-color: var(--color-pri);
+  font-size: 1.25rem;
+  position: sticky;
+  top: 0;
+
+  &::after {
+    background-image: url("/images/drips-pink.svg");
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 3.5em;
+    left: 0;
+    position: absolute;
+    top: 98%;
+    width: 8.625em;
+  }
 }
 
 .list {
   display: flex;
-  gap: 1rem;
+  gap: 1em;
   justify-content: center;
   margin: 0 auto;
   max-width: var(--container-width-lg);
@@ -21,7 +36,7 @@
     display: flex;
     font-stretch: 75%;
     font-weight: 500;
-    height: 2.25rem;
+    height: 2.25em;
     letter-spacing: 0.1em;
     padding: 0 1em;
     position: relative;

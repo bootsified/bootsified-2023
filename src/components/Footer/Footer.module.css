@@ -5,6 +5,19 @@
   color: var(--text-reverse);
   padding-bottom: 3rem;
   padding-top: 3rem;
+  position: relative;
+
+  &::after {
+    background-image: url("/images/drips-lite.svg");
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 3.5rem;
+    position: absolute;
+    right: 20%;
+    top: -4px;
+    width: 8.625rem;
+  }
 }
 
 .container {
@@ -27,23 +40,46 @@
 }
 
 .splatText {
-  & svg {
-    display: block;
-    margin: 0 auto 0.5rem;
-
-    & [class*="_splat"] {
-      fill: var(--text-reverse);
-    }
-
-    & [class*="_bee"] {
-      fill: var(--footer-background);
-    }
-  }
+  text-align: center;
 
   & p {
     font-family: var(--font-family-hand);
     font-size: 1.25em;
     margin-bottom: 0;
+  }
+}
+
+.splat {
+  margin-bottom: 0.5rem;
+
+  & svg {
+    display: inline-block;
+    transition: all 150ms var(--ease-out-back);
+
+    & [class*="_splat"] {
+      fill: var(--text-reverse);
+      transition: all 100ms ease;
+    }
+
+    & [class*="_bee"] {
+      fill: var(--footer-background);
+      transition: all 100ms ease;
+    }
+  }
+
+  &:hover {
+    & svg {
+      filter: drop-shadow(0 0 0.5rem #0009);
+      transform: rotate(-5deg) scale(1.5);
+
+      & [class*="_splat"] {
+        fill: var(--color-pri);
+      }
+
+      & [class*="_bee"] {
+        fill: var(--text-reverse);
+      }
+    }
   }
 }
 
