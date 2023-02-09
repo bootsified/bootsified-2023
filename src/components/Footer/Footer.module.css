@@ -71,7 +71,7 @@
   text-align: center;
 
   & p {
-    font-family: var(--font-family-hand);
+    /* font-family: var(--font-family-hand); */
     font-size: 1.25em;
     margin-bottom: 0;
   }
