@@ -76,9 +76,7 @@
   --border-color-focus: var(--gray-9);
 
   /* font families */
-  --font-family-base: "Mona Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  --font-family-heading: "Righteous", "Helvetica Neue", helvetica, arial, sans-serif;
-  --font-family-hand: "Gochi Hand", "Helvetica Neue", helvetica, arial, sans-serif;
+  --font-base: "Mona Sans", "Helvetica Neue", helvetica, arial, sans-serif;
 
   /* container */
   --container-side-padding: 1rem;

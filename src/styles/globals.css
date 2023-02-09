@@ -47,7 +47,7 @@ html {
 body {
   background-color: var(--background);
   color: var(--text);
-  font-family: var(--font-family-base);
+  font-family: var(--font-base);
   font-size: 16px;
 }
 
@@ -57,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-family-heading);
+  font-family: var(--font-heading);
   font-stretch: 85%;
   font-weight: 400;
   margin: 0 0 1em;

@@ -9,7 +9,7 @@ function Homepage() {
       <div className={styles.content}>
         <h1>This is the homepage, yo!</h1>
         <p>
-          How &rsquo;bout we go to <Link href="/about">the About Page</Link>?
+          How &rsquo;bout we go to <Link href="/bio">the Bio Page</Link>?
         </p>
       </div>
     </div>

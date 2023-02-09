@@ -23,8 +23,8 @@ const Nav = ({ className }: NavProps) => {
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="/about" className={pathname === '/about' ? styles.isActive : ''}>
-            About
+          <Link href="/bio" className={pathname === '/bio' ? styles.isActive : ''}>
+            Bio
           </Link>
         </li>
         <li className={styles.item}>

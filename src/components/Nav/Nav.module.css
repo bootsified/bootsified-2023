@@ -56,8 +56,6 @@
 
     &::before {
       aspect-ratio: 9 / 13;
-
-      /* background-color: #f00; */
       background-image: url("/images/drips-nav.svg");
       background-repeat: no-repeat;
       background-size: 100%;
