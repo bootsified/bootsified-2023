@@ -1,0 +1,78 @@
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: var(--gray-6);
+  border: none;
+  border-radius: 0;
+  color: var(--text-reverse);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-heading);
+  font-size: 1em;
+  font-weight: 400;
+  height: 2.5em;
+  justify-content: center;
+  line-height: 1;
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+  padding: 0 1.5em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all var(--hover-duration) ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  z-index: 0;
+
+  &:hover {
+    background-color: var(--color-pri);
+  }
+
+  &:disabled {
+    cursor: not-allowed !important;
+    opacity: 0.35 !important;
+    pointer-events: none;
+  }
+}
+
+.compact {
+  height: 3.4375em;
+  padding: 0 1.5em;
+}
+
+.default {
+  color: var(--text);
+}
+
+.reverse {
+  color: var(--text-reverse);
+
+  @nest [data-whatintent="keyboard"] & {
+    &:focus, &:focus-visible, &:active {
+      outline-color: inherit;
+    }
+  }
+
+  @nest [data-whatintent="mouse"] &:hover {
+    &::before {
+      background-color: var(--color-sec);
+      border-color: var(--color-sec);
+    }
+  }
+}
+
+.primary {
+  color: var(--text-reverse);
+
+  @nest [data-whatintent="mouse"] &:hover {
+    &::before {
+      background-color: var(--color-sec);
+      border-color: var(--color-sec);
+    }
+  }
+}
+
+.secondary {
+  color: var(--text-reverse);
+}

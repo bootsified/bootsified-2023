@@ -1,7 +1,11 @@
-import Homepage from '@components/Homepage'
+import Intro from '@/components/Intro'
 
-import styles from './page.module.css'
-
-export default function Home() {
-  return <Homepage />
+const Home = () => {
+  return (
+    <>
+      <Intro />
+    </>
+  )
 }
+
+export default Home

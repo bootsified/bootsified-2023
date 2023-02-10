@@ -1,0 +1,63 @@
+.container {
+  display: grid;
+  grid-gap: 3rem;
+  margin: 0 auto;
+  max-width: var(--container-width-md);
+  padding-bottom: 4rem;
+  padding-left: var(--container-side-padding);
+  padding-right: var(--container-side-padding);
+  padding-top: 2rem;
+
+  @media screen and (min-width: 760px) {
+    align-items: start;
+    grid-template-columns: 6fr 4fr;
+    padding-top: 4rem;
+  }
+}
+
+.text {
+  & h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+  }
+
+  & p {
+    @media screen and (min-width: 760px) {
+      font-size: 1.125em;
+    }
+
+    &:last-child {
+      margin-top: 1.5em;
+    }
+  }
+}
+
+.image {
+  filter: drop-shadow(2px 2px 10px #0002);
+  margin: 0 auto;
+  max-width: 20.5rem;
+  position: relative;
+
+  &::before {
+    background-image: url("/images/drips-white.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: " ";
+    display: block;
+    height: 3.5rem;
+    left: 50%;
+    pointer-events: none;
+    position: absolute;
+    top: calc(100% - (1em + 2px));
+    transform: translateX(-50%);
+    width: 8.625rem;
+    z-index: -1;
+  }
+
+  & img {
+    border: 1em solid #fff;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+  }
+}
