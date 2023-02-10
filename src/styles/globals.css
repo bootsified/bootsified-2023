@@ -2,6 +2,11 @@
 @import url("viewports");
 @import url("variables");
 
+::selection {
+  background-color: var(--color-pri);
+  color: #fff;
+}
+
 /* smooth light-dark mode transition */
 * {
   transition: all var(--hover-duration) ease;

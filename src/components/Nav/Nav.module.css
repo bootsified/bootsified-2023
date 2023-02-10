@@ -66,16 +66,15 @@
       position: absolute;
       top: 0;
       transform: translateY(-100%);
-      transition: transform 500ms var(--ease-out-sine);
+      transition: transform 250ms var(--ease-out-sine);
       width: 100%;
       z-index: -1;
     }
 
-    &.isActive,
-    &:hover {
+    @nest [data-whatintent="mouse"] &:hover, &.isActive {
       &::before {
-        transform: translateY(0);
-        transition-duration: 750ms;
+        transform: translateY(-2px);
+        transition-duration: 500ms;
         transition-timing-function: var(--ease-in-sine);
       }
     }

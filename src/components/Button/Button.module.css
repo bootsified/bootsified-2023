@@ -25,12 +25,13 @@
   white-space: nowrap;
   z-index: 0;
 
-  &:hover {
+  @nest [data-whatintent="mouse"] &:hover {
     background-color: var(--color-pri);
 
     & svg {
       fill: var(--color-pri);
       transform: translateY(0);
+      transition: fill var(--hover-duration) ease, transform 1000ms var(--ease-out-circ);
     }
   }
 
@@ -49,7 +50,7 @@
     right: 0;
     top: calc(100% - 4px);
     transform: translateY(-100%);
-    transition: all var(--hover-duration) ease;
+    transition: fill var(--hover-duration) ease, transform var(--hover-duration) var(--ease-in-circ);
     width: 8.625em;
     z-index: -1;
   }

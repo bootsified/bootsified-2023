@@ -1,0 +1,136 @@
+.overlay {
+  background-color: var(--color-pri);
+  inset: 0;
+  position: fixed;
+}
+
+.content {
+  background-color: var(--color-white);
+  border-radius: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999999;
+
+  @media screen and (max-width: 699px) {
+    transform: none !important;
+  }
+
+  @media screen and (min-width: 700px) {
+    bottom: auto;
+    display: block;
+    flex-direction: unset;
+    justify-content: unset;
+    left: 50%;
+    max-height: 85vh;
+    right: auto;
+    top: 50%;
+    width: 90vw;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.content + .overlay {
+  z-index: 999999;
+}
+
+@media screen and (min-width: 700px) {
+  .flex {
+    max-width: 90vw;
+    width: auto;
+  }
+
+  .small {
+    max-width: 28rem;
+  }
+
+  .medium {
+    max-width: 50rem;
+  }
+
+  .large {
+    max-width: 72rem;
+  }
+}
+
+.inner {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+
+  @media screen and (min-width: 700px) {
+    height: auto;
+    max-height: 85vh;
+  }
+}
+
+.close {
+  appearance: none;
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+  height: 2.75rem;
+  padding: 1rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: 2.75rem;
+
+  @media screen and (min-width: 700px) {
+    right: 0;
+    top: 0;
+
+    @nest [data-outside-close="true"] & {
+      bottom: 100%;
+      top: auto;
+    }
+  }
+
+  &::before {
+    background-color: var(--background-contrast);
+    border-radius: 50%;
+    content: " ";
+    display: block;
+    height: 2.25rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color var(--hover-duration) ease;
+    width: 2.25rem;
+  }
+
+  & svg {
+    display: block;
+    height: 0.8rem;
+    left: 50%;
+    position: absolute;
+    stroke: var(--text);
+    stroke-width: 8px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: stroke var(--hover-duration) ease;
+    width: 0.8rem;
+    z-index: 1;
+  }
+
+  @nest [data-whatintent="mouse"] &:hover {
+    &::before {
+      background-color: var(--color-sec);
+    }
+
+    & svg {
+      stroke: var(--text-reverse);
+    }
+  }
+}

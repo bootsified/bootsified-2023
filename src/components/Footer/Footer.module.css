@@ -87,27 +87,27 @@
     margin-bottom: 1rem;
     transition: all 150ms var(--ease-out-back);
 
-    & [class*="_splat"] {
+    & [class*="splat"] {
       fill: var(--text-reverse);
       transition: all 100ms ease;
     }
 
-    & [class*="_bee"] {
+    & [class*="bee"] {
       fill: var(--footer-background);
       transition: all 100ms ease;
     }
   }
 
-  &:hover {
+  @nest [data-whatintent="mouse"] &:hover {
     & svg {
       filter: drop-shadow(0 0 0.5rem #0009);
       transform: rotate(-5deg) scale(1.5);
 
-      & [class*="_splat"] {
+      & [class*="splat"] {
         fill: var(--color-pri);
       }
 
-      & [class*="_bee"] {
+      & [class*="bee"] {
         fill: var(--text-reverse);
       }
     }

@@ -3,8 +3,6 @@ import Header from '@components/Header'
 import Nav from '@components/Nav'
 import Link from 'next/link'
 
-import 'what-input'
-
 import { gochiHand, righteous } from './fonts'
 
 import '@styles/globals.css'

@@ -5,6 +5,12 @@ import clsx from 'clsx'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+// Adding what-input here because:
+// - it must be initialized client-side
+// - this component is site-wide
+// - this component is rendered client-side
+import 'what-input'
+
 import styles from './Nav.module.css'
 
 type NavProps = {

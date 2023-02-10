@@ -36,6 +36,9 @@ const Intro = () => {
           src={photo}
           alt="Photo of Boots, sitting in front of a backdrop of cartoon unicorns."
           placeholder="blur"
+          width="500"
+          height="500"
+          loading="eager"
         />
       </div>
     </div>
