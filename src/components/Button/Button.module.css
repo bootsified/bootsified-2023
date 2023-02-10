@@ -1,7 +1,7 @@
 .button {
   align-items: center;
   appearance: none;
-  background-color: var(--gray-6);
+  background-color: var(--gray-10);
   border: none;
   border-radius: 0;
   color: var(--text-reverse);
@@ -27,12 +27,31 @@
 
   &:hover {
     background-color: var(--color-pri);
+
+    & svg {
+      fill: var(--color-pri);
+      transform: translateY(0);
+    }
   }
 
   &:disabled {
     cursor: not-allowed !important;
     opacity: 0.35 !important;
     pointer-events: none;
+  }
+
+  & svg {
+    fill: var(--gray-10);
+    font-size: 0.5em;
+    height: 3.5em;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% - 4px);
+    transform: translateY(-100%);
+    transition: all var(--hover-duration) ease;
+    width: 8.625em;
+    z-index: -1;
   }
 }
 

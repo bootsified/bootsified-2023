@@ -3,13 +3,13 @@
   grid-gap: 3rem;
   margin: 0 auto;
   max-width: var(--container-width-md);
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
   padding-left: var(--container-side-padding);
   padding-right: var(--container-side-padding);
   padding-top: 2rem;
 
   @media screen and (min-width: 760px) {
-    align-items: start;
+    align-items: center;
     grid-template-columns: 6fr 4fr;
     padding-top: 4rem;
   }
@@ -18,7 +18,7 @@
 .text {
   & h1 {
     font-size: 4em;
-    margin-bottom: 0;
+    margin-bottom: 0.25em;
   }
 
   & p {
@@ -27,8 +27,15 @@
     }
 
     &:last-child {
-      margin-top: 1.5em;
+      margin-bottom: 0;
+      margin-top: 2em;
     }
+  }
+}
+
+.button {
+  @media screen and (max-width: 500px) {
+    width: 100%;
   }
 }
 

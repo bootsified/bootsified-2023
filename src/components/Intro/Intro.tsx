@@ -19,14 +19,14 @@ const Intro = () => {
         <h1 className={styles.heading}>Hello!</h1>
         <p>
           My name is John Highland, but most people know me as <strong>&ldquo;Boots&rdquo;</strong>{' '}
-          &mdash; long story... I currently live in Dallas, TX, with my very loving and
-          understanding wife and two <s>terrorists</s> sons. For {spanWeb} years, I’ve been
-          developing websites, but my first passion was playing bass guitar ({thisYear} marks{' '}
-          {spanBass} years). Welcome to my home. Take a look around... make yourself comfy.{' '}
+          &mdash; long story. I currently live in Dallas, TX, with my very loving and understanding
+          wife and two <s>terrorists</s> sons. For {spanWeb} years, I’ve been developing websites,
+          but my first passion was playing bass guitar ({thisYear} marks {spanBass} years). Welcome
+          to my home. Take a look around... make yourself comfy.{' '}
           <Link href="/contact">Let me know</Link> if you need anything.
         </p>
         <p>
-          <Button variant="primary" href="/bio">
+          <Button className={styles.button} variant="primary" href="/bio">
             Get to know me
           </Button>
         </p>
@@ -35,6 +35,7 @@ const Intro = () => {
         <Image
           src={photo}
           alt="Photo of Boots, sitting in front of a backdrop of cartoon unicorns."
+          placeholder="blur"
         />
       </div>
     </div>
