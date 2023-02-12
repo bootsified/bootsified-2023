@@ -1,11 +1,12 @@
 .overlay {
-  background-color: var(--color-pri);
+  background-color: #000;
   inset: 0;
   position: fixed;
+  z-index: 1000;
 }
 
 .content {
-  background-color: var(--color-white);
+  background-color: var(--background);
   border-radius: 0;
   bottom: 0;
   display: flex;
@@ -31,6 +32,23 @@
     right: auto;
     top: 50%;
     width: 90vw;
+  }
+
+  &::after {
+    background-image: url("/images/drips-lite.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: " ";
+    font-size: 0.8rem;
+    height: 3.5em;
+    position: absolute;
+    right: 10%;
+    top: calc(100% - 2px);
+    width: 8.625em;
+
+    @media screen and (min-width: 740px) {
+      font-size: 1rem;
+    }
   }
 
   &:focus {
@@ -126,7 +144,7 @@
 
   @nest [data-whatintent="mouse"] &:hover {
     &::before {
-      background-color: var(--color-sec);
+      background-color: var(--color-pri);
     }
 
     & svg {

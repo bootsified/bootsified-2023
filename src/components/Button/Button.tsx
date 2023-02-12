@@ -21,12 +21,13 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   children: ReactNode
   variant?: keyof typeof BUTTON_VARIANTS
   href?: string
+  isLink?: boolean
 }
 
 export type ButtonRef = HTMLButtonElement | HTMLAnchorElement
 
 const Button = forwardRef<ButtonRef, ButtonProps>(function Button(
-  { className, compact = false, children, variant = 'default', ...props },
+  { className, compact = false, children, variant = 'default', isLink = false, ...props },
   ref
 ) {
   if (!BUTTON_VARIANTS[variant]) {
@@ -37,7 +38,7 @@ const Button = forwardRef<ButtonRef, ButtonProps>(function Button(
     )
   }
 
-  const Element = props.href ? 'a' : 'button'
+  const Element = props.href ? 'a' : isLink ? 'span' : 'button'
 
   return (
     <Element

@@ -1,21 +1,25 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import Button from '@components/Button'
+import Modal from '@components/Modal'
 import photo from '@public/images/me-unicorns.jpg'
+import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import styles from './Intro.module.css'
+import richStyles from '@styles/rich-text.module.css'
 
 const Intro = () => {
   const thisYear = new Date().getFullYear()
   const spanWeb = thisYear - 1997
   const spanBass = thisYear - 1983
-
-  console.log('spanWeb', spanWeb)
+  const [open, setOpen] = useState(false)
 
   return (
     <div className={styles.container}>
-      <div className={styles.text}>
+      <div className={clsx(styles.text, richStyles.richText)}>
         <h1 className={styles.heading}>Hello!</h1>
         <p>
           My name is John Highland, but most people know me as <strong>&ldquo;Boots&rdquo;</strong>{' '}
@@ -26,9 +30,22 @@ const Intro = () => {
           <Link href="/contact">Let me know</Link> if you need anything.
         </p>
         <p>
-          <Button className={styles.button} variant="primary" href="/bio">
-            Get to know me
-          </Button>
+          <Link href="/bio">
+            <Button className={styles.button} variant="primary" isLink={true}>
+              Get to know me
+            </Button>
+          </Link>
+
+          <Modal
+            open={open}
+            onOpenChange={() => {
+              setOpen(!open)
+            }}
+            trigger={<Button variant="primary">Open the modal window</Button>}
+            size="medium"
+          >
+            <h1>This is a modal window</h1>
+          </Modal>
         </p>
       </div>
       <div className={styles.image}>
