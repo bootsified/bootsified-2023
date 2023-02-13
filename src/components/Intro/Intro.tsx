@@ -11,11 +11,20 @@ import Link from 'next/link'
 import styles from './Intro.module.css'
 import richStyles from '@styles/rich-text.module.css'
 
+const showModalOnLoad = () => {
+  if (sessionStorage.getItem('visited')) {
+    return false
+  } else {
+    sessionStorage.setItem('visited', 'true')
+    return true
+  }
+}
+
 const Intro = () => {
   const thisYear = new Date().getFullYear()
   const spanWeb = thisYear - 1997
   const spanBass = thisYear - 1983
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(showModalOnLoad)
 
   return (
     <div className={styles.container}>
@@ -29,7 +38,7 @@ const Intro = () => {
           to my home. Take a look around... make yourself comfy.{' '}
           <Link href="/contact">Let me know</Link> if you need anything.
         </p>
-        <p>
+        <p className={styles.links}>
           <Link href="/bio">
             <Button className={styles.button} variant="primary" isLink={true}>
               Get to know me
@@ -41,7 +50,11 @@ const Intro = () => {
             onOpenChange={() => {
               setOpen(!open)
             }}
-            trigger={<Button variant="primary">Open the modal window</Button>}
+            trigger={
+              <Button variant="primary" className={styles.button}>
+                Open the modal window
+              </Button>
+            }
             size="medium"
           >
             <h1>This is a modal window</h1>

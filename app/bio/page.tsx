@@ -1,10 +1,11 @@
 import React from 'react'
+import Bio from '@components/Bio'
 
 export const metadata = {
-  title: 'About',
-  description: 'This will be my bio page.',
+  title: `Bio ${process.env.metaPageTitle}`,
+  description: 'Find out more about John "Boots" Highland.',
 }
 
 export default function About() {
-  return <h1>This is where my bio will go.</h1>
+  return <Bio />
 }

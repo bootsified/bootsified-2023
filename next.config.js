@@ -10,7 +10,10 @@ const nextConfig = {
     });
 
     return config;
-  }
+  },
+  env: {
+    metaPageTitle: '- John "Boots" Highland',
+  },
 }
 
 module.exports = nextConfig

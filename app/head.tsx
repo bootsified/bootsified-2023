@@ -1,7 +1,9 @@
 export default function Head() {
+  const ttl = `Bootsified ${process.env.metaPageTitle}`
+
   return (
     <>
-      <title>Bootsified - John &ldquo;Boots&rdquo; Highland</title>
+      <title>{ttl}</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="description"

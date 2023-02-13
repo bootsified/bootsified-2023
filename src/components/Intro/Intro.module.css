@@ -8,7 +8,7 @@
   padding-right: var(--container-side-padding);
   padding-top: 2rem;
 
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 740px) {
     align-items: center;
     grid-template-columns: 6fr 4fr;
     padding-top: 4rem;
@@ -33,9 +33,16 @@
   }
 }
 
-.button {
-  @media screen and (max-width: 500px) {
-    width: 100%;
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  & .button,
+  a:has(.button) {
+    @media screen and (max-width: 499px) {
+      width: 100%;
+    }
   }
 }
 

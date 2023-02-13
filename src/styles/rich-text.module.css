@@ -1,5 +1,5 @@
 .richText {
-  & a {
+  & a:not(:has(span)) {
     outline: 2px solid transparent;
 
     @nest [data-whatintent="mouse"] &:hover {
