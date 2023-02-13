@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '@components/Button'
 import Modal from '@components/Modal'
 import photo from '@public/images/me-unicorns.jpg'
@@ -11,20 +11,18 @@ import Link from 'next/link'
 import styles from './Intro.module.css'
 import richStyles from '@styles/rich-text.module.css'
 
-const showModalOnLoad = () => {
-  if (sessionStorage.getItem('visited')) {
-    return false
-  } else {
-    sessionStorage.setItem('visited', 'true')
-    return true
-  }
-}
-
 const Intro = () => {
   const thisYear = new Date().getFullYear()
   const spanWeb = thisYear - 1997
   const spanBass = thisYear - 1983
-  const [open, setOpen] = useState(showModalOnLoad)
+  const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    if (!sessionStorage.getItem('visited')) {
+      sessionStorage.setItem('visited', 'true')
+      setOpen(true)
+    }
+  }, [])
 
   return (
     <div className={styles.container}>
