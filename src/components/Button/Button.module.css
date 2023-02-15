@@ -25,7 +25,7 @@
   white-space: nowrap;
   z-index: 0;
 
-  @nest [data-whatintent="mouse"] &:hover {
+  @nest [data-whatintent="mouse"] &:hover, &[data-is-active="true"] {
     background-color: var(--color-pri);
 
     & svg {
@@ -57,8 +57,9 @@
 }
 
 .compact {
-  height: 3.4375em;
-  padding: 0 1.5em;
+  height: 2em;
+
+  /* padding: 0 1.5em; */
 }
 
 .default {

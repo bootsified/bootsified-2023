@@ -34,7 +34,7 @@ const Nav = ({ className }: NavProps) => {
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="/work" className={pathname === '/work' ? styles.isActive : ''}>
+          <Link href="/work" className={pathname?.includes('/work') ? styles.isActive : ''}>
             Work
           </Link>
         </li>
