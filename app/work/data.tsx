@@ -29,4 +29,21 @@ export const sections = [
   },
 ]
 
-export const projects = []
+export const projects = [
+  {
+    id: 'mizzen',
+    title: 'Mizzen+Main Website',
+    client: 'Mizzen+Main',
+    year: '2016-2023',
+    category: 'web-dev',
+    agency: 'Mizzen+Main',
+    screenshot: '',
+    video: '',
+    audio: null,
+    photo: null,
+    youtube: null,
+    skills: ['HTML/CSS/JS', 'Next.js/React', 'Liquid', 'Site Management'],
+    notes: 'Notes will go here.',
+    logo: '',
+  },
+]
