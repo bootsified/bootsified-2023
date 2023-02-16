@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import Button from '@components/Button'
 import Modal from '@components/Modal'
+import Popup from '@components/Popup'
 import photo from '@public/images/me-unicorns.jpg'
 import clsx from 'clsx'
 import Image from 'next/image'
@@ -53,9 +54,9 @@ const Intro = () => {
                 Open the modal window
               </Button>
             }
-            size="medium"
+            size="small"
           >
-            <h1>This is a modal window</h1>
+            <Popup />
           </Modal>
         </p>
       </div>

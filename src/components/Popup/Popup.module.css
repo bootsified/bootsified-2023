@@ -1,0 +1,22 @@
+.container {
+  padding-bottom: 3rem;
+  padding-left: var(--container-side-padding);
+  padding-right: var(--container-side-padding);
+  padding-top: 4rem;
+
+  @media screen and (min-width: 700px) {
+    padding-top: 2rem;
+  }
+}
+
+.heading {
+  font-size: 2.125em;
+  line-height: 1;
+  margin-bottom: 0.75em;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}

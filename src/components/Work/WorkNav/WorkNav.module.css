@@ -4,7 +4,7 @@
 
 .toggle {
   @media screen and (min-width: 740px) {
-    display: none;
+    display: none !important;
   }
 }
 
