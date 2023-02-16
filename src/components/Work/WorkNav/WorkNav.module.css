@@ -2,6 +2,12 @@
   /* stuff */
 }
 
+.toggle {
+  @media screen and (min-width: 740px) {
+    display: none;
+  }
+}
+
 .list {
   display: grid;
   grid-gap: 2rem;

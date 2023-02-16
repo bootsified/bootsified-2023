@@ -7,7 +7,9 @@ export default function WorkLayout({ children }: { children: React.ReactNode }) 
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>What I&rsquo;ve been up&nbsp;to...</h1>
-      <WorkNav />
+      <div className={styles.nav}>
+        <WorkNav />
+      </div>
       {children}
     </div>
   )

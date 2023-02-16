@@ -1,5 +1,7 @@
 import React from 'react'
+import { sections } from 'app/work/data'
 
+// TODO: Fix this shit
 export const metadata = {
   title: 'My Work',
   description: 'This will be my portfolio page.',
@@ -13,5 +15,7 @@ type WorkProps = {
 
 export default function Work({ params }: WorkProps) {
   const { slug } = params
-  return <p>This is the {slug || 'work'} page.</p>
+  const activeSection = slug ? sections.find(item => item.id === slug[0]) : null
+
+  return <>{activeSection?.description && <p>{activeSection?.description}</p>}</>
 }
