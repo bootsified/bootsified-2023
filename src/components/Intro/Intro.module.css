@@ -75,3 +75,11 @@
     overflow: hidden;
   }
 }
+
+.player {
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 4rem;
+  max-width: var(--container-width-sm);
+  padding-left: var(--container-side-padding);
+  padding-right: var(--container-side-padding);
+}
