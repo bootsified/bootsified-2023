@@ -1,7 +1,7 @@
 export const sections = [
   {
     id: 'all',
-    label: 'All',
+    label: 'All Projects',
     description: '',
   },
   {

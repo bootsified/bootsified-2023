@@ -32,7 +32,7 @@ const WorkNav = () => {
         }}
         data-active={open}
       >
-        {titles.length ? titles.join(' / ') : 'All'}
+        {titles.length ? titles.join(' / ') : 'All Projects'}
       </Button>
       <ul className={styles.list} data-open={open}>
         <>
