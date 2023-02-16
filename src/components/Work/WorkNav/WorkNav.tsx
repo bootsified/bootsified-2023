@@ -1,14 +1,16 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '@components/Button'
 import { sections } from 'app/work/data'
+import clsx from 'clsx'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import styles from './WorkNav.module.css'
 
 const WorkNav = () => {
+  const [open, setOpen] = useState(false)
   const pathname = usePathname()
   const segments: string[] = pathname?.split('/') || []
 
@@ -22,10 +24,17 @@ const WorkNav = () => {
   return (
     <nav className={styles.container}>
       <h2 className="srOnly">Work Navigation:</h2>
-      <Button variant="primary" compact className={styles.toggle}>
+      <Button
+        variant="primary"
+        className={clsx(styles.toggle)}
+        onClick={() => {
+          setOpen(!open)
+        }}
+        data-active={open}
+      >
         {titles.length ? titles.join(' / ') : 'All'}
       </Button>
-      <ul className={styles.list}>
+      <ul className={styles.list} data-open={open}>
         <>
           {sections.map(section => {
             let url = ''
@@ -42,7 +51,12 @@ const WorkNav = () => {
             }
             return (
               <li key={section.id} className={styles.item}>
-                <Link href={url}>
+                <Link
+                  href={url}
+                  onClick={() => {
+                    setOpen(false)
+                  }}
+                >
                   <Button
                     isLink={true}
                     className={styles.button}
