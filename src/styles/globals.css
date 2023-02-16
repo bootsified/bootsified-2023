@@ -69,6 +69,10 @@ p {
 a {
   color: var(--color-pri);
   transition: all var(--hover-duration) ease;
+
+  &:has(span) {
+    text-decoration: none;
+  }
 }
 
 a:focus,
