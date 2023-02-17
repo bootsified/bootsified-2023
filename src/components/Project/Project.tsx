@@ -27,6 +27,16 @@ const Project = ({ project }: ProjectProps) => {
       <div className={styles.logo}>
         <Image src={project.logo} height={100} width={100} alt={`${project.client} Logo`} />
       </div>
+      <div className={styles.content}>
+        <div className={styles.screenshot}>
+          <Image
+            src={project.screenshot}
+            height={225}
+            width={400}
+            alt={`${project.title} Screenshot`}
+          />
+        </div>
+      </div>
     </div>
   )
 }

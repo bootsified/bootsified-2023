@@ -3,6 +3,10 @@
   border-radius: 0.5em;
   box-shadow: 4px 4px 0 var(--color-pri);
   cursor: pointer;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas: "heading logo" "content content";
+  grid-template-columns: 1fr auto;
   padding: 1.25em 1em;
   transition: box-shadow var(--hover-duration) ease;
 
@@ -16,6 +20,7 @@
   font-size: 1.125em;
   font-stretch: 80%;
   font-weight: 600;
+  grid-area: heading;
   letter-spacing: 0.05em;
   line-height: 1;
   text-transform: uppercase;
@@ -25,7 +30,20 @@
   & img {
     border-radius: 50%;
     display: block;
+    grid-area: logo;
     height: 3.125em;
     width: 3.125em;
+  }
+}
+
+.content {
+  grid-area: content;
+}
+
+.screenshot {
+  & img {
+    border: 1px solid var(--gray-4);
+    border-radius: 4px;
+    display: block;
   }
 }
