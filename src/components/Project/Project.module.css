@@ -1,0 +1,31 @@
+.container {
+  background-color: #fff;
+  border-radius: 0.5em;
+  box-shadow: 4px 4px 0 var(--color-pri);
+  cursor: pointer;
+  padding: 1.25em 1em;
+  transition: box-shadow var(--hover-duration) ease;
+
+  @nest [data-whatintent="mouse"] &:hover {
+    box-shadow: 8px 8px 0 var(--color-pri);
+  }
+}
+
+.heading {
+  font-family: var(--font-base);
+  font-size: 1.125em;
+  font-stretch: 80%;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.logo {
+  & img {
+    border-radius: 50%;
+    display: block;
+    height: 3.125em;
+    width: 3.125em;
+  }
+}

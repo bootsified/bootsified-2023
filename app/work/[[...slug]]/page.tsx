@@ -1,7 +1,11 @@
 import React from 'react'
-import { sections } from 'app/work/data'
+import { projects, sections } from 'app/work/data'
 
-// TODO: Fix this shit
+import Project from '@/components/Project'
+
+import styles from '@components/Work/Work.module.css'
+
+// TODO: Make this meta data dynamic
 export const metadata = {
   title: 'My Work',
   description: 'This will be my portfolio page.',
@@ -13,9 +17,29 @@ type WorkProps = {
   }
 }
 
-export default function Work({ params }: WorkProps) {
+const Work = ({ params }: WorkProps) => {
   const { slug } = params
   const activeSection = slug ? sections.find(item => item.id === slug[0]) : null
+  let filteredProjects = projects
 
-  return <>{activeSection?.description && <p>{activeSection?.description}</p>}</>
+  if (activeSection?.id !== undefined) {
+    filteredProjects = projects.filter(proj => proj.category === activeSection?.id)
+  }
+
+  return (
+    <>
+      {activeSection?.description && <p>{activeSection?.description}</p>}
+      <div className={styles.projects}>
+        {filteredProjects.length ? (
+          filteredProjects.map(proj => <Project key={proj.id} project={proj} />)
+        ) : (
+          <p className={styles.noResults}>
+            Oooops... There aren&rsquo;t any results for this category :(
+          </p>
+        )}
+      </div>
+    </>
+  )
 }
+
+export default Work
