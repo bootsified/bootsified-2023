@@ -8,22 +8,51 @@
   grid-template-areas: "heading logo" "content content";
   grid-template-columns: 1fr auto;
   padding: 1.25em 1em;
+  position: relative;
   transition: box-shadow var(--hover-duration) ease;
 
   @nest [data-whatintent="mouse"] &:hover {
     box-shadow: 8px 8px 0 var(--color-pri);
   }
+
+  &::after {
+    background-color: #fff;
+    border-radius: 0.5em;
+    color: var(--color-pri);
+    content: attr(data-category);
+    display: block;
+
+    /* font-family: var(--font-heading); */
+    font-size: 0.875em;
+    font-stretch: 75%;
+    left: 0;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    padding: 0.5em 1rem;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+  }
 }
 
 .heading {
+  align-self: center;
   font-family: var(--font-base);
   font-size: 1.125em;
   font-stretch: 80%;
   font-weight: 600;
   grid-area: heading;
   letter-spacing: 0.05em;
-  line-height: 1;
+  line-height: 1.1;
+  margin-bottom: 0;
   text-transform: uppercase;
+
+  & span {
+    display: block;
+    font-size: 0.75em;
+    font-weight: 400;
+    margin-top: 0.25em;
+  }
 }
 
 .logo {
@@ -37,6 +66,7 @@
 }
 
 .content {
+  align-self: end;
   grid-area: content;
 }
 
@@ -45,5 +75,28 @@
     border: 1px solid var(--gray-4);
     border-radius: 4px;
     display: block;
+  }
+}
+
+.cta {
+  margin-top: 1rem;
+  text-align: right;
+
+  & button {
+    appearance: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+    color: var(--color-pri);
+    font-size: 0.875em;
+    line-height: 1;
+    padding: 0;
+    pointer-events: none;
+
+    &::after {
+      content: "\00BB";
+      display: inline-block;
+      margin-left: 0.5em;
+    }
   }
 }

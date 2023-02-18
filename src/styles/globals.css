@@ -21,7 +21,6 @@
 
 html,
 body {
-  height: 100%;
   min-height: 100vh;
 
   @media (prefers-reduced-motion: reduce) {
@@ -36,6 +35,8 @@ body {
 }
 
 html {
+  height: auto;
+
   &:not(.transitioning) {
     scroll-behavior: smooth;
 
@@ -48,6 +49,7 @@ body {
   color: var(--text);
   font-family: var(--font-base);
   font-size: 16px;
+  height: 100%;
 }
 
 h1,
