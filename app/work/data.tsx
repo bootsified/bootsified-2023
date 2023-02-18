@@ -137,7 +137,7 @@ export const projects = [
     projectType: 'Video',
     category: 'misc',
     agency: 'Boots',
-    logo: '/images/work/logos/video-logo.png',
+    logo: '/images/work/logos/bootsified-logo.png',
     screenshot: '/images/work/screenshots/theinterrogation-screenshot.jpg',
     url: '',
     media: 'https://youtu.be/lhPjK90urgk',
