@@ -17,12 +17,12 @@ export const sections = [
     description:
       'In fourth grade, music grabbed me by the ear and never let go. Until I discovered web development, it was my primary passion. Here are a few of the highlights over the years.',
   },
-  {
-    id: 'photo',
-    label: 'Photography',
-    description:
-      "Along the way, I wound up picking up a camera and found that I kinda liked shooting photos as well. It's never really been a *passion* per se, but it's fun when I have the time.  Enjoy!",
-  },
+  // {
+  //   id: 'photo',
+  //   label: 'Photography',
+  //   description:
+  //     "Along the way, I wound up picking up a camera and found that I kinda liked shooting photos as well. It's never really been a *passion* per se, but it's fun when I have the time.  Enjoy!",
+  // },
   {
     id: 'misc',
     label: 'Other Stuff',
@@ -42,7 +42,7 @@ export const projects = [
     logo: '/images/work/logos/mizzen-logo.png',
     screenshot: '/images/work/screenshots/mizzen-screenshot.jpg',
     url: '',
-    media: '/images/work/video/mizzen-walkthrough.mp4',
+    media: '/images/work/video/mizzen-walkthrough-web.mp4',
     mediaType: 'walkthrough',
     skills: ['HTML/CSS/JS', 'Next.js/React', 'Liquid', 'Site Management'],
     notes: 'Notes will go here.',
@@ -110,7 +110,7 @@ export const projects = [
     media:
       'https://soundcloud.com/the-beta-release/tots-nugs?si=ac1f0deed53e4c989695d00be8cad362&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
     mediaType: 'audio',
-    skills: ['Writing/Arranging/Production', 'Bass Guitar', 'Guitar', 'Synths', 'Drum Programming'],
+    skills: ['Writing/Arranging/Production', 'Vocals', 'Bass Guitar', 'Guitar', 'Drum Programming'],
     notes: 'Notes will go here.',
   },
   {

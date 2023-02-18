@@ -1,5 +1,10 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import Image from 'next/image'
+
+import Modal from '../Modal'
+import ProjectDetails from './ProjectDetails'
 
 import styles from './Project.module.css'
 
@@ -23,6 +28,8 @@ type ProjectProps = {
 }
 
 const Project = ({ project }: ProjectProps) => {
+  const [open, setOpen] = useState(false)
+
   const {
     title,
     client,
@@ -49,25 +56,42 @@ const Project = ({ project }: ProjectProps) => {
       : 'More Info'
 
   return (
-    <div className={styles.container} data-category={category.replace('-', ' ')}>
-      <h2 className={styles.heading}>
-        {title}{' '}
-        <span>
-          {projectType} &bull; {year}
-        </span>
-      </h2>
-      <div className={styles.logo}>
-        <Image src={logo} height={100} width={100} alt={`${client} Logo`} />
-      </div>
-      <div className={styles.content}>
-        <div className={styles.screenshot}>
-          <Image src={screenshot} height={225} width={400} alt={`${title} Screenshot`} />
-        </div>
-        <div className={styles.cta}>
-          <button>{ctaLabel}</button>
-        </div>
-      </div>
-    </div>
+    <>
+      <Modal
+        trigger={
+          <button
+            className={styles.container}
+            data-category={category.replace('-', ' ')}
+            type="button"
+          >
+            <h2 className={styles.heading}>
+              {title}{' '}
+              <span>
+                {projectType} &bull; {year}
+              </span>
+            </h2>
+            <div className={styles.logo}>
+              <Image src={logo} height={100} width={100} alt={`${client} Logo`} />
+            </div>
+            <div className={styles.content}>
+              <div className={styles.screenshot}>
+                <Image src={screenshot} height={225} width={400} alt={`${title} Screenshot`} />
+              </div>
+              <div className={styles.cta}>
+                <span>{ctaLabel}</span>
+              </div>
+            </div>
+          </button>
+        }
+        open={open}
+        onOpenChange={() => {
+          setOpen(!open)
+        }}
+        size="flex"
+      >
+        <ProjectDetails project={project} />
+      </Modal>
+    </>
   )
 }
 

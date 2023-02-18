@@ -1,7 +1,10 @@
 .container {
-  background-color: #fff;
+  appearance: none;
+  background: #fff;
+  border: none;
   border-radius: 0.5em;
   box-shadow: 4px 4px 0 var(--color-pri);
+  color: var(--text);
   cursor: pointer;
   display: grid;
   grid-gap: 1em;
@@ -9,6 +12,7 @@
   grid-template-columns: 1fr auto;
   padding: 1.25em 1em;
   position: relative;
+  text-align: left;
   transition: box-shadow var(--hover-duration) ease;
 
   @nest [data-whatintent="mouse"] &:hover {
@@ -82,7 +86,7 @@
   margin-top: 1rem;
   text-align: right;
 
-  & button {
+  & span {
     appearance: none;
     background: none;
     border: none;
