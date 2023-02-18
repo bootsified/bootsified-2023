@@ -87,6 +87,7 @@ const Project = ({ project }: ProjectProps) => {
         onOpenChange={() => {
           setOpen(!open)
         }}
+        fullscreenMobile
         size="flex"
       >
         <ProjectDetails project={project} />

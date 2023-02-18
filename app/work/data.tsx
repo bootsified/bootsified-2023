@@ -57,7 +57,7 @@ export const projects = [
     agency: '',
     logo: '/images/work/logos/thebetarelease-logo.png',
     screenshot: '/images/work/screenshots/thebetarelease-screenshot.jpg',
-    url: 'https://thebetarelease.com',
+    url: '',
     media:
       'https://soundcloud.com/the-beta-release/the-release?in=the-beta-release/sets/first-four-demo/s-GJmPNOdFLgZ&si=3532862927724aefafb5105e8ec32838&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
     mediaType: 'audio',
@@ -334,7 +334,7 @@ export const projects = [
     url: '',
     media: '',
     mediaType: '',
-    skills: ['HTML/CSS/JS', 'Shopify'],
+    skills: ['HTML/CSS/JS', 'Liquid', 'Shopify'],
     notes: 'Notes will go here.',
   },
 ]

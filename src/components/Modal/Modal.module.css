@@ -51,6 +51,17 @@
   &:focus {
     outline: none;
   }
+
+  &[data-fullscreen-mobile="true"] {
+    @media screen and (max-width: 699px) {
+      bottom: 0;
+      justify-content: flex-start;
+      left: 0;
+      right: 0;
+      top: 0;
+      transform: none !important;
+    }
+  }
 }
 
 .content + .overlay {

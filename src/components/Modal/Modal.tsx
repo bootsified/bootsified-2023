@@ -20,6 +20,7 @@ type ModalProps = {
   children: ReactNode
   defaultOpen?: boolean
   outsideClose?: boolean
+  fullscreenMobile?: boolean
   size?: keyof typeof MODAL_VARIANTS
   onOpenChange?: (open: boolean) => void
 }
@@ -30,6 +31,7 @@ const Modal = ({
   children,
   defaultOpen = false,
   outsideClose = false,
+  fullscreenMobile = false,
   size = 'small',
   onOpenChange,
   ...props
@@ -53,6 +55,7 @@ const Modal = ({
             <Dialog.Content
               className={clsx(styles.content, MODAL_VARIANTS[size])}
               data-outside-close={outsideClose}
+              data-fullscreen-mobile={fullscreenMobile}
               forceMount
               asChild
             >
