@@ -17,7 +17,7 @@ const url = ''
 
 export const metadata = {
   title: {
-    default: 'Web Development, Bass Guitar, and Much More | John "Boots" Highland',
+    default: 'Web Development, Bass Guitar, and Much More - John "Boots" Highland',
     template: '%s - John "Boots" Highland',
   },
   description: pageDescription,
