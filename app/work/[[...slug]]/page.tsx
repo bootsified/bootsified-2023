@@ -5,19 +5,13 @@ import Project from '@/components/Project'
 
 import styles from '@components/Work/Work.module.css'
 
-// TODO: Make this meta data dynamic
-export const metadata = {
-  title: 'My Work',
-  description: 'This will be my portfolio page.',
-}
-
 type WorkProps = {
   params: {
     slug: string
   }
 }
 
-const Work = ({ params }: WorkProps) => {
+const WorkPage = ({ params }: WorkProps) => {
   const { slug } = params
   const activeSection = slug ? sections.find(item => item.id === slug[0]) : sections[0]
   let filteredProjects = projects
@@ -44,4 +38,4 @@ const Work = ({ params }: WorkProps) => {
   )
 }
 
-export default Work
+export default WorkPage

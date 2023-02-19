@@ -4,18 +4,21 @@ export const sections = [
     label: 'All Projects',
     description:
       "Here's a little bit of everything.  Some are pretty random... some are *really* old (#NoRegerts). For my web projects, so many of these either no longer exist, or have been redeveloped since I launched them. Archived links *might* be available upon request.",
+    seo: "Here is a few of the various projects I've had over the years - websites, music, goofy videos, etc.",
   },
   {
     id: 'web-dev',
     label: 'Web Development',
     description:
       'Here are some of my more recent web projects. Unfortunately, the web is an ever-evolving beast, so many of these either no longer exist, or have been redeveloped since I launched them. Archived links *might* be available upon request.',
+    seo: 'These are some of my most recent web development projects.',
   },
   {
     id: 'music',
     label: 'Music',
     description:
       'In fourth grade, music grabbed me by the ear and never let go. Until I discovered web development, it was my primary passion. Here are a few of the highlights over the years.',
+    seo: "Music was my first passion, and I've had a TON of musical ventures along the way.  Here are some of the highlights.",
   },
   // {
   //   id: 'photo',
