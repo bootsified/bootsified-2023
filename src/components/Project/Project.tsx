@@ -75,7 +75,13 @@ const Project = ({ project }: ProjectProps) => {
             </div>
             <div className={styles.content}>
               <div className={styles.screenshot}>
-                <Image src={screenshot} height={225} width={400} alt={`${title} Screenshot`} />
+                <Image
+                  src={screenshot}
+                  height={225}
+                  width={400}
+                  alt={`${title} Screenshot`}
+                  loading="lazy"
+                />
               </div>
               <div className={styles.cta}>
                 <span>{ctaLabel}</span>

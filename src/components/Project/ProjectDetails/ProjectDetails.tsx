@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import ReactPlayer from 'react-player'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -44,6 +44,8 @@ const ProjectDetails = ({ project }: ProjectProps) => {
     skills,
     notes,
   } = project
+  const mediaPlayerRef = useRef<ReactPlayer>(null)
+  const [playing, setPlaying] = useState(true)
 
   return (
     <div className={styles.container}>
@@ -63,18 +65,13 @@ const ProjectDetails = ({ project }: ProjectProps) => {
           {media !== '' ? (
             media.includes('.mp4') ? (
               <ReactPlayer
+                ref={mediaPlayerRef}
                 url={media}
-                light={true}
+                light={<img src={screenshot} alt={`${title} ${projectType} screenshot`} />}
                 controls={true}
-                playing={true}
+                playing={playing}
                 width="100%"
                 height="100%"
-                style={{
-                  backgroundImage: `url(${screenshot})`,
-                  backgroundSize: 'cover',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center center',
-                }}
               />
             ) : (
               <ReactPlayer url={media} controls={true} width="100%" height="100%" />
