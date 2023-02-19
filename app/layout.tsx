@@ -39,6 +39,10 @@ export const metadata = {
       },
     ],
   },
+  appleMobileWebAppTitle: 'Boots!',
+  applicationName: 'Boots!',
+  msapplicationTileColor: '#B00075',
+  themeColor: '#B00075',
   twitter: {
     card: 'summary',
     title: pageTitle,
