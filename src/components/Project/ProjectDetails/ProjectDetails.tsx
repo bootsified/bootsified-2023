@@ -106,7 +106,7 @@ const ProjectDetails = ({ project }: ProjectProps) => {
               </th>
               <td>{client}</td>
             </tr>
-            {agency !== '' && (
+            {agency !== '' && projectType !== 'Music Video' && (
               <tr className={styles.deet}>
                 <th scope="row">Agency:</th>
                 <td>{agency}</td>
