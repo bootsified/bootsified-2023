@@ -75,6 +75,7 @@ import styles from '@styles/RootLayout.module.css'
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" className={`${gochiHand.variable} ${righteous.variable}`}>
+      <head />
       <body className={styles.body}>
         <Header className={styles.header} />
         <Nav className={styles.nav} />
