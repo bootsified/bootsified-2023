@@ -72,6 +72,9 @@ const ProjectDetails = ({ project }: ProjectProps) => {
                 playing={playing}
                 width="100%"
                 height="100%"
+                onEnded={() => {
+                  mediaPlayerRef.current?.showPreview()
+                }}
               />
             ) : (
               <ReactPlayer url={media} controls={true} width="100%" height="100%" />

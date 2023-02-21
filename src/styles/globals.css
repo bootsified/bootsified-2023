@@ -187,11 +187,15 @@ hr {
   border: none !important;
   display: flex;
   flex-direction: column;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   gap: 1rem;
   justify-content: center;
   margin-left: 0 !important;
   margin-top: 1em;
+
+  @media screen and (min-width: 700px) {
+    font-size: 1.75rem;
+  }
 
   &::before {
     border-style: solid;
