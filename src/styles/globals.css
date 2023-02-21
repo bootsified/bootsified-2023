@@ -36,12 +36,7 @@ body {
 
 html {
   height: auto;
-
-  &:not(.transitioning) {
-    scroll-behavior: smooth;
-
-    /* scroll-padding-top: calc(var(--promo-banner-height) + var(--main-header-height)); */
-  }
+  scroll-behavior: smooth;
 }
 
 body {

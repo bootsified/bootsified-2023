@@ -24,22 +24,30 @@ const Nav = ({ className }: NavProps) => {
     <nav className={clsx(styles.wrapper, className)}>
       <ul className={styles.list}>
         <li className={styles.item}>
-          <Link href="/" className={pathname === '/' ? styles.isActive : ''}>
+          <Link href="/" className={pathname === '/' ? styles.isActive : ''} scroll={true}>
             Home
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="/bio" className={pathname === '/bio' ? styles.isActive : ''}>
+          <Link href="/bio" className={pathname === '/bio' ? styles.isActive : ''} scroll={true}>
             Bio
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="/work" className={pathname?.includes('/work') ? styles.isActive : ''}>
+          <Link
+            href="/work"
+            className={pathname?.includes('/work') ? styles.isActive : ''}
+            scroll={true}
+          >
             Work
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="/contact" className={pathname === '/contact' ? styles.isActive : ''}>
+          <Link
+            href="/contact"
+            className={pathname === '/contact' ? styles.isActive : ''}
+            scroll={true}
+          >
             Contact
           </Link>
         </li>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Bio from '@components/Bio'
 
+import ScrollUp from '@/components/ScrollUp/ScrollUp'
 import { SITE_URL } from '@/utils/constants'
 
 ////////////////////////////////////////////////////////
@@ -27,7 +28,12 @@ import { SITE_URL } from '@/utils/constants'
 // }
 
 const BioPage = () => {
-  return <Bio />
+  return (
+    <>
+      <ScrollUp />
+      <Bio />
+    </>
+  )
 }
 
 export default BioPage

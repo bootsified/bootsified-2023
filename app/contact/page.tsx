@@ -1,5 +1,6 @@
 import React from 'react'
 
+import ScrollUp from '@/components/ScrollUp/ScrollUp'
 import { SITE_URL } from '@/utils/constants'
 
 ////////////////////////////////////////////////////////
@@ -27,7 +28,12 @@ import { SITE_URL } from '@/utils/constants'
 // }
 
 const ContactPage = () => {
-  return <h1>This is where my contact info will go.</h1>
+  return (
+    <>
+      <ScrollUp />
+      <h1>This is where my contact info will go.</h1>
+    </>
+  )
 }
 
 export default ContactPage
