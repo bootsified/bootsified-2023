@@ -22,7 +22,9 @@ const Intro = () => {
   useEffect(() => {
     if (!sessionStorage.getItem('visited')) {
       sessionStorage.setItem('visited', 'true')
-      setOpen(true)
+      setTimeout(() => {
+        setOpen(true)
+      }, 3000)
     }
   }, [])
 
@@ -52,8 +54,8 @@ const Intro = () => {
                 setOpen(!open)
               }}
               trigger={
-                <Button variant="primary" className={styles.button}>
-                  Open the modal window
+                <Button variant="primary" className={styles.button} style={{ display: 'none' }}>
+                  Open the greeting window
                 </Button>
               }
               size="small"
