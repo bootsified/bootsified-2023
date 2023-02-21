@@ -19,6 +19,7 @@ const Footer = ({ className }: FooterProps) => {
         <div className={styles.splatText}>
           <Link href="/" className={styles.splat}>
             <Splat />
+            <span className="srOnly">Back to the homepage</span>
           </Link>
           <p>
             <span className={styles.group}>They&rsquo;re not booing...</span>{' '}
