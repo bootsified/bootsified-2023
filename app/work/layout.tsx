@@ -5,39 +5,28 @@ import { SITE_URL } from '@/utils/constants'
 
 import styles from '@components/Work/Work.module.css'
 
-const pageTitle = `My Projects`
-const pageDescription =
-  "Here is a few of the various projects I've had over the years - websites, music, goofy videos, etc."
-const url = '/work'
+////////////////////////////////////////////////////////
+// TODO: When they get their shit together, here you go:
+////////////////////////////////////////////////////////
 
-export const metadata = {
-  title: pageTitle,
-  description: pageDescription,
-  twitter: {
-    title: pageTitle,
-    description: pageDescription,
-    url: `${SITE_URL}${url}`,
-  },
-  openGraph: {
-    title: pageTitle,
-    description: pageDescription,
-    url: `${SITE_URL}${url}`,
-  },
-}
+// const pageTitle = `My Projects`
+// const pageDescription =
+//   "Here is a few of the various projects I've had over the years - websites, music, goofy videos, etc."
+// const url = '/work'
 
-// TODO: A FIX IS COMING FOR THIS
-// type MetaProps = {
-//   params: any
-// }
-
-// export async function generateMetadata({ params }: MetaProps) {
-//   console.log(params.slug)
-//   const { slug } = params
-//   const activeSection = slug ? sections.find(item => item.id === slug[0]) : sections[0]
-//   return {
-//     title: `Work - ${activeSection?.label} ${process.env.metaPageTitle}`,
-//     description: activeSection?.seo,
-//   }
+// export const metadata = {
+//   title: pageTitle,
+//   description: pageDescription,
+//   twitter: {
+//     title: pageTitle,
+//     description: pageDescription,
+//     url: `${SITE_URL}${url}`,
+//   },
+//   openGraph: {
+//     title: pageTitle,
+//     description: pageDescription,
+//     url: `${SITE_URL}${url}`,
+//   },
 // }
 
 const WorkLayout = ({ children }: { children: React.ReactNode }) => {
