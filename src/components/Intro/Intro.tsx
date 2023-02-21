@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player'
 import Button from '@components/Button'
 import Modal from '@components/Modal'
 import Popup from '@components/Popup'
-import photo from '@public/images/me-unicorns.jpg'
+import photo from '@public/images/john-boots-highland-unicorns.jpg'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -72,6 +72,7 @@ const Intro = () => {
             width="500"
             height="500"
             loading="eager"
+            priority
           />
         </div>
       </div>

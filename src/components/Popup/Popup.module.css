@@ -1,8 +1,8 @@
 .container {
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   padding-left: var(--container-side-padding);
   padding-right: var(--container-side-padding);
-  padding-top: 4rem;
+  padding-top: 3.5rem;
 
   @media screen and (min-width: 700px) {
     padding-top: 2rem;

@@ -76,7 +76,7 @@
     width: 8.625rem;
     z-index: -1;
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 740px) {
       left: 10%;
       right: auto;
     }
@@ -86,10 +86,15 @@
     border: 0.75em solid #fff;
     border-radius: 3rem;
     display: block;
+    object-fit: cover;
     overflow: hidden;
 
     @media screen and (min-width: 700px) {
       border-width: 1em;
+    }
+
+    @media screen and (max-width: 799px) and (orientation: portrait) {
+      aspect-ratio: 4 / 3;
     }
   }
 }

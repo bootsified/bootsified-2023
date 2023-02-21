@@ -21,6 +21,7 @@ type ModalProps = {
   defaultOpen?: boolean
   outsideClose?: boolean
   fullscreenMobile?: boolean
+  bottomFade?: boolean
   size?: keyof typeof MODAL_VARIANTS
   onOpenChange?: (open: boolean) => void
 }
@@ -32,6 +33,7 @@ const Modal = ({
   defaultOpen = false,
   outsideClose = false,
   fullscreenMobile = false,
+  bottomFade = false,
   size = 'small',
   onOpenChange,
   ...props
@@ -56,6 +58,7 @@ const Modal = ({
               className={clsx(styles.content, MODAL_VARIANTS[size])}
               data-outside-close={outsideClose}
               data-fullscreen-mobile={fullscreenMobile}
+              data-bottom-fade={bottomFade}
               forceMount
               asChild
             >

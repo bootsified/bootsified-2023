@@ -1,4 +1,6 @@
 import React from 'react'
+import photoKid from '@public/images/john-boots-highland-kid.jpg'
+import photoYard from '@public/images/john-boots-highland-yard.jpg'
 import clsx from 'clsx'
 import Image from 'next/image'
 
@@ -12,7 +14,7 @@ const Bio = () => {
       <div className={styles.content}>
         <div className={styles.headerImage}>
           <Image
-            src="/images/me-kid.jpg"
+            src={photoKid}
             alt="Boots as a kid in the snow, dressed in an army hat and coat."
             width={400}
             height={400}
@@ -55,10 +57,11 @@ const Bio = () => {
 
         <div className={styles.footerImage}>
           <Image
-            src="/images/me-yard.jpg"
+            src={photoYard}
             alt="Boots standing in the front yard of his home, holding his laptop."
             width={900}
             height={506}
+            priority
           />
         </div>
       </div>

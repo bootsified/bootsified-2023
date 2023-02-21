@@ -100,22 +100,24 @@ const ProjectDetails = ({ project }: ProjectProps) => {
       <div className={styles.deetsNotes}>
         <div className={styles.deets}>
           <table>
-            <tr className={styles.deet}>
-              <th scope="row">
-                {projectType === 'Song' || projectType === 'Music Video' ? 'Artist' : 'Client'}:
-              </th>
-              <td>{client}</td>
-            </tr>
-            {agency !== '' && projectType !== 'Music Video' && (
+            <tbody>
               <tr className={styles.deet}>
-                <th scope="row">Agency:</th>
-                <td>{agency}</td>
+                <th scope="row">
+                  {projectType === 'Song' || projectType === 'Music Video' ? 'Artist' : 'Client'}:
+                </th>
+                <td>{client}</td>
               </tr>
-            )}
-            <tr className={styles.deet}>
-              <th scope="row">Skills used:</th>
-              <td>{skills.join(', ')}</td>
-            </tr>
+              {agency !== '' && projectType !== 'Music Video' && (
+                <tr className={styles.deet}>
+                  <th scope="row">Agency:</th>
+                  <td>{agency}</td>
+                </tr>
+              )}
+              <tr className={styles.deet}>
+                <th scope="row">Skills used:</th>
+                <td>{skills.join(', ')}</td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <div className={styles.notes}>
