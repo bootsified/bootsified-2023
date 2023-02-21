@@ -30,6 +30,7 @@ export const sections = [
     id: 'misc',
     label: 'Other Stuff',
     description: "Here are some other random things I've done.",
+    seo: "Here are some other random things I've done.",
   },
 ]
 
