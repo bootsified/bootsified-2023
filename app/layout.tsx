@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 import { SITE_URL } from '@/utils/constants'
 
+import { AnalyticsWrapper } from './analytics'
 import { gochiHand, righteous } from './fonts'
 
 import '@styles/globals.css'
@@ -81,6 +82,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <Nav className={styles.nav} />
         <main className={styles.main}>{children}</main>
         <Footer className={styles.footer} />
+        <AnalyticsWrapper />
       </body>
     </html>
   )
