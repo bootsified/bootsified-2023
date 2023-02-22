@@ -10,7 +10,6 @@
     "ngrok": "ngrok http 3000"
   },
   "dependencies": {
-    "@next/font": "13.1.6",
     "@radix-ui/react-dialog": "^1.0.2",
     "@radix-ui/react-popover": "1.0.3",
     "@svgr/webpack": "^6.5.1",
@@ -24,7 +23,7 @@
     "eslint-config-next": "^13.1.6",
     "framer-motion": "^9.0.2",
     "get-youtube-id": "^1.0.1",
-    "next": "^13.1.6",
+    "next": "^13.1.7-canary.26",
     "photoswipe": "^5.3.5",
     "pluralize": "^8.0.0",
     "postcss-loader": "^7.0.2",

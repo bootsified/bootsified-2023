@@ -1,4 +1,4 @@
-import { Gochi_Hand, Righteous } from '@next/font/google'
+import { Gochi_Hand, Righteous } from 'next/font/google'
 
 export const righteous = Righteous({
   weight: ['400'],
