@@ -12,7 +12,7 @@ export const skillRatings = [
         rating: 5,
       },
       {
-        skill: 'HTML',
+        skill: 'JavaScript',
         rating: 4,
       },
       {
