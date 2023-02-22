@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Contact from '@/components/Contact'
 import ScrollUp from '@/components/ScrollUp/ScrollUp'
 import { SITE_URL } from '@/utils/constants'
 
@@ -31,7 +32,7 @@ const ContactPage = () => {
   return (
     <>
       <ScrollUp />
-      <h1>This is where my contact info will go.</h1>
+      <Contact />
     </>
   )
 }

@@ -1,0 +1,147 @@
+.container {
+  margin: 0 auto;
+  max-width: var(--container-width-md);
+  padding-bottom: 6rem;
+  padding-left: var(--container-side-padding);
+  padding-right: var(--container-side-padding);
+  padding-top: 3rem;
+
+  @media screen and (min-width: 740px) {
+    padding-top: 5rem;
+  }
+}
+
+.heading {
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  line-height: 1;
+  margin-bottom: 2.5rem;
+}
+
+.content {
+  @media screen and (min-width: 640px) {
+    display: flex;
+    gap: 2rem;
+  }
+
+  @media screen and (min-width: 900px) {
+    gap: 4rem;
+  }
+}
+
+.otherLinks {
+  margin: 0 auto;
+  max-width: 20rem;
+  padding-top: 5rem;
+
+  @media screen and (min-width: 640px) {
+    border-left: 1px solid var(--border-color);
+    flex: 0 0 auto;
+    margin: 0;
+    max-width: none;
+    padding-left: 2rem;
+    padding-top: 0;
+  }
+
+  @media screen and (min-width: 900px) {
+    padding-left: 3rem;
+  }
+
+  & h2 {
+    margin-bottom: 0.5em;
+  }
+
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  & li {
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+}
+
+.link {
+  align-items: center;
+  display: flex;
+  gap: 1em;
+
+  @nest [data-whatintent="mouse"] &:hover {
+    text-decoration: underline;
+
+    & svg {
+      fill: var(--color-pri);
+    }
+  }
+
+  & svg {
+    display: block;
+    flex: 0 0 auto;
+    height: 2em;
+    transition: fill var(--hover-duration) ease;
+    width: 2em;
+  }
+
+  & span {
+    font-size: 0.875em;
+  }
+}
+
+.form {
+  & p {
+    margin-bottom: 2em;
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  font-stretch: 75%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  &::after {
+    color: var(--color-pri);
+    content: "*";
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 1;
+    margin-left: 0.15em;
+    vertical-align: top;
+  }
+}
+
+.input,
+.textarea {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text);
+
+  @nest [data-whatintent="mouse"] &:hover {
+    border-color: var(--border-color-hover);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 2px solid var(--color-pri);
+  }
+}
+
+.input {
+  height: 3.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.textarea {
+  min-height: 10em;
+  padding: 1em;
+  resize: vertical;
+}
