@@ -25,24 +25,6 @@ const Head = () => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:url" content={`${SITE_URL}${url}`} />
-
-      {/* GOOGLE ANALYTICS */}
-      <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-QXQK9E9F9V"
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-QXQK9E9F9V');
-          `,
-        }}
-      />
     </>
   )
 }
