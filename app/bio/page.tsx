@@ -31,7 +31,7 @@ import { SITE_URL } from '@/utils/constants'
 const BioPage = () => {
   return (
     <>
-      <ScrollUp />
+      {/* <ScrollUp /> */}
       <Bio />
       <Specialize />
     </>

@@ -23,7 +23,7 @@ const WorkPage = ({ params }: WorkProps) => {
 
   return (
     <>
-      <ScrollUp />
+      {/* <ScrollUp /> */}
       {activeSection?.description && (
         <p dangerouslySetInnerHTML={{ __html: activeSection?.description }} />
       )}

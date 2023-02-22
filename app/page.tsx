@@ -4,7 +4,7 @@ import ScrollUp from '@/components/ScrollUp/ScrollUp'
 const HomePage = () => {
   return (
     <>
-      <ScrollUp />
+      {/* <ScrollUp /> */}
       <Intro />
     </>
   )
