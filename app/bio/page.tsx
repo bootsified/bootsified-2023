@@ -2,6 +2,7 @@ import React from 'react'
 import Bio from '@components/Bio'
 
 import ScrollUp from '@/components/ScrollUp/ScrollUp'
+import Specialize from '@/components/Specialize'
 import { SITE_URL } from '@/utils/constants'
 
 ////////////////////////////////////////////////////////
@@ -32,6 +33,7 @@ const BioPage = () => {
     <>
       <ScrollUp />
       <Bio />
+      <Specialize />
     </>
   )
 }

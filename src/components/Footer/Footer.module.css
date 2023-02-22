@@ -31,6 +31,12 @@
       right: 20%;
     }
   }
+
+  &.pinkDrips {
+    &::after {
+      background-image: url("/images/drips-pink.svg");
+    }
+  }
 }
 
 .container {
