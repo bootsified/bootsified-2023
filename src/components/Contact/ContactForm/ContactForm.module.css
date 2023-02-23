@@ -1,0 +1,76 @@
+.container {
+  /* stuff */
+}
+
+.form {
+  & > p {
+    margin-bottom: 2em;
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1.5rem;
+
+  @nest .disabled & {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
+
+.label {
+  font-stretch: 75%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  &::after {
+    color: var(--color-pri);
+    content: "*";
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 1;
+    margin-left: 0.15em;
+    vertical-align: top;
+  }
+}
+
+.input,
+.textarea {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text);
+
+  @nest [data-whatintent="mouse"] &:hover {
+    border-color: var(--border-color-hover);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 2px solid var(--color-pri);
+  }
+}
+
+.input {
+  height: 3.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.textarea {
+  min-height: 10em;
+  padding: 1em;
+  resize: vertical;
+}
+
+.alert {
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  & button {
+    width: 100%;
+  }
+}

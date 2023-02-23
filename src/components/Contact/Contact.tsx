@@ -5,7 +5,7 @@ import PDFIcon from '@assets/icons/contact-icon-pdf.svg'
 import TwitterIcon from '@assets/icons/contact-icon-twitter.svg'
 import Link from 'next/link'
 
-import Button from '../Button'
+import ContactForm from './ContactForm'
 
 import styles from './Contact.module.css'
 
@@ -14,38 +14,7 @@ const Contact = () => {
     <div className={styles.container}>
       <h1 className={styles.heading}>Let me hear from&nbsp;you...</h1>
       <div className={styles.content}>
-        <form className={styles.form}>
-          <p>
-            If you need to reach me, please fill out the quick form below and I will get back with
-            you ASAP. Thanks!
-          </p>
-          <div className={styles.inputGroup}>
-            <label htmlFor="txt-name" className={styles.label}>
-              Your Name
-            </label>
-            <input id="txt-name" type="text" className={styles.input} name="Name" required />
-          </div>
-          <div className={styles.inputGroup}>
-            <label htmlFor="txt-email" className={styles.label}>
-              Your Email Address
-            </label>
-            <input id="txt-email" type="email" className={styles.input} name="Email" required />
-          </div>
-          <div className={styles.inputGroup}>
-            <label htmlFor="txt-message" className={styles.label}>
-              Your Message
-            </label>
-            <textarea
-              className={styles.textarea}
-              name="Message"
-              id="txt-message"
-              required
-            ></textarea>
-          </div>
-          <div className={styles.buttons}>
-            <Button variant="primary">Send it</Button>
-          </div>
-        </form>
+        <ContactForm />
         <aside className={styles.otherLinks}>
           <h2>Other Links</h2>
           <ul>

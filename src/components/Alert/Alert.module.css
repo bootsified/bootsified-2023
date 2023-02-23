@@ -1,0 +1,58 @@
+.container {
+  --color-success: #167504;
+
+  border: 1px solid;
+  border-radius: 0.25em;
+  font-size: 0.875em;
+  margin: 0 auto;
+  max-width: 36em;
+  padding: 1em 1.25em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 0;
+
+  &::before {
+    bottom: 0;
+    content: " ";
+    display: block;
+    left: 0;
+    opacity: 0.1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  & h2 {
+    font-family: var(--font-base);
+    font-size: 1.5em !important;
+    font-stretch: 100%;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0.25em;
+  }
+
+  & p {
+    font-size: 1em !important;
+    margin-bottom: 0;
+  }
+}
+
+.success {
+  border-color: var(--color-success);
+  color: var(--color-success);
+
+  &::before {
+    background-color: var(--color-success);
+  }
+}
+
+.error {
+  border-color: var(--color-error);
+  color: var(--color-error);
+
+  &::before {
+    background-color: var(--color-error);
+  }
+}
