@@ -69,10 +69,6 @@ export const skillRatings = [
         skill: 'Video Production',
         rating: 4,
       },
-      {
-        skill: 'Live Sound Engineering',
-        rating: 3,
-      },
     ],
   },
 ]

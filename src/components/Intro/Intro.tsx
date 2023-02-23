@@ -54,11 +54,7 @@ const Intro = () => {
                 setOpen(!open)
               }}
               trigger={
-                <Button
-                  variant="primary"
-                  className={styles.button}
-                  style={{ visibility: 'hidden', pointerEvents: 'none' }}
-                >
+                <Button variant="primary" className={styles.button} style={{ display: 'none' }}>
                   Open the greeting window
                 </Button>
               }

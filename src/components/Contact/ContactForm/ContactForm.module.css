@@ -42,6 +42,7 @@
   border: 1px solid var(--border-color);
   border-radius: 4px;
   color: var(--text);
+  transition: border-color var(--hover-duration) ease;
 
   @nest [data-whatintent="mouse"] &:hover {
     border-color: var(--border-color-hover);

@@ -49,7 +49,10 @@ export const projects = [
     media: '/images/work/video/mizzen-walkthrough-web.mp4',
     mediaType: 'walkthrough',
     skills: ['HTML/CSS/JS', 'Next.js/React', 'Liquid', 'Site Management'],
-    notes: 'Notes will go here.',
+    notes:
+      '<p>After 20+ years building websites for clients, my time with Mizzen+Main was my first chance to have my own "baby". I was the Sr Manager of Web Development for Mizzen+Main, which meant I was in charge of everything to do with the website.  I handled 90% of the front-end development for the site, and managed a team of developers for the rest. Mizzen is a Shopify store, and when I started, we were on the older Liquid platform.</p>\
+      <p>In 2022, I was able to lead our team through transitioning to a more modern "headless" site, using React/Next.js and Sanity CMS, while pulling in product data through the Shopify APIs. This is a massive site, and performed extremely well as the company grew. I\'m SUPER proud of the work I was able to do at Mizzen.</p>\
+      <p>Since I\'ve left, the site has gone through some significant changes, so unfortunately I can only show a video of the site from my time there.</p>',
   },
   {
     id: 'the-release',
@@ -66,7 +69,11 @@ export const projects = [
       'https://soundcloud.com/the-beta-release/the-release?in=the-beta-release/sets/first-four-demo/s-GJmPNOdFLgZ&si=3532862927724aefafb5105e8ec32838&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
     mediaType: 'audio',
     skills: ['Writing/Arranging/Production', 'Bass Guitar', 'Guitar', 'Synths', 'Drum Programming'],
-    notes: 'Notes will go here.',
+    notes:
+      "<p>Ah, 2020... What a miserable year you were. Well, being locked down for months with the family was tough, but during that time, I wound up starting a little \"COVID project\" that turned out to be something special.</p>\
+    <p>Over the years, I'd always thought about making my own album, but never really had the inspiration to do it. In the effort to pass the time during the pandemic, I decided to \"just do it\" and start recording whatever came to mind at the moment.  The result was my new music project, The Beta Release.</p>\
+    <p>I was able to get 4 songs recorded before life kicked in again, and this - an instrumental called <em>The Release</em> - is the first one that's ready to share.  The other 3 are mostly hard rock remakes of old electro-pop songs from the 80s/90s, but since I'm not really a vocalist, I'm working on bringing in someone else to handle that. Hopefully I'll be able to share those soon as well.</p>\
+    <p>I hope that life will allow me to continue this project into the future.  I have a many more ideas for song remakes.  We'll see if they ever make it out of my head.</p>",
   },
   {
     id: 'vale',
@@ -82,7 +89,9 @@ export const projects = [
     media: '',
     mediaType: '',
     skills: ['HTML/CSS/JS', 'CraftCMS', 'Twig', 'Website Design', 'Logo Design'],
-    notes: 'Notes will go here.',
+    notes:
+      "<p>This was kind of a fun \"passion project\" for my wife's former counseling practice. It's several years old now, but it's still a favorite of mine, and still serves the practice well.</p>\
+    <p>I handled everything from design to development - even helping them with a new logo - and it's got a super nice, fully custom CMS, built with CraftCMS. I'm really proud of this one.</p>",
   },
   {
     id: 'adopted',
@@ -98,7 +107,10 @@ export const projects = [
     media: '/images/work/video/adopted-walkthrough-web.mp4',
     mediaType: 'walkthrough',
     skills: ['HTML/CSS/JS', 'ExpressionEngine'],
-    notes: 'Notes will go here.',
+    notes:
+      "<p>One of the big clients we had when I was working at Switch was the Gladney Center for Adoption. <strong>AdoptED</strong> was a program of theirs dedicated to promoting adoption through education. We were able to have a little fun with the design of this site, and push the boundaries a bit with the layout and interface. I love its look and feel, and had a lot of fun developing it.\
+      <p>It was built using ExpressionEngine, which at the time was one of the best CMS platforms around. It also featured big, bold, fullscreen images and aggressive colors, along with some slick parallaxing that was all the rage at the time. I still think it's pretty cool.<p>\
+      <p>Sadly, it no longer exists, so the best I can do is show you a walkthrough video. #WompWomp</p>",
   },
   {
     id: 'tots-nuggs',
