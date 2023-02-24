@@ -19,6 +19,12 @@
   flex: 1 1 auto;
   position: relative;
   z-index: 2;
+
+  @media screen and (min-width: 900px) {
+    background-image: url("/images/halftone-dots3.png"), url("/images/halftone-dots-top.png");
+    background-position: left bottom, right top;
+    background-repeat: no-repeat;
+  }
 }
 
 .footer {
