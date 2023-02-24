@@ -7,6 +7,10 @@
   @media screen and (min-width: 700px) {
     padding-top: 2rem;
   }
+
+  & p {
+    text-shadow: 0 0 5px #fff;
+  }
 }
 
 .heading {

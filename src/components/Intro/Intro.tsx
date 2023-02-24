@@ -10,6 +10,8 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { ALWAYS_POPUP } from '@/utils/constants'
+
 import styles from './Intro.module.css'
 import richStyles from '@styles/rich-text.module.css'
 
@@ -20,7 +22,8 @@ const Intro = () => {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    if (!sessionStorage.getItem('visited')) {
+    console.log('ALWAYS_POPUP', ALWAYS_POPUP)
+    if (!sessionStorage.getItem('visited') || ALWAYS_POPUP) {
       sessionStorage.setItem('visited', 'true')
       setTimeout(() => {
         setOpen(true)
@@ -59,6 +62,7 @@ const Intro = () => {
                 </Button>
               }
               size="small"
+              tinyDots
             >
               <Popup />
             </Modal>

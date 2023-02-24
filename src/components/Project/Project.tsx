@@ -94,8 +94,6 @@ const Project = ({ project }: ProjectProps) => {
           setOpen(!open)
         }}
         fullscreenMobile
-        bottomFade
-        hasDots
         size="flex"
       >
         <ProjectDetails project={project} />
