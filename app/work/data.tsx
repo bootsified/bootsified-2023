@@ -48,7 +48,15 @@ export const projects = [
     url: '',
     media: '/images/work/video/mizzen-walkthrough-web.mp4',
     mediaType: 'walkthrough',
-    skills: ['HTML/CSS/JS', 'Next.js/React', 'Liquid', 'Site Management'],
+    skills: [
+      'HTML',
+      'CSS',
+      'JS',
+      'Next.js/React',
+      'Liquid',
+      'Custom Shopify Themeing',
+      'Site Management',
+    ],
     notes:
       '<p>After 20+ years building websites for clients, my time with Mizzen+Main was my first chance to have my own "baby". I was the Sr Manager of Web Development for Mizzen+Main, which meant I was in charge of everything to do with the website.  I handled 90% of the front-end development for the site, and managed a team of developers for the rest. Mizzen is a Shopify store, and when I started, we were on the older Liquid platform.</p>\
       <p>In 2022, I was able to lead our team through transitioning to a more modern "headless" site, using React/Next.js and Sanity CMS, while pulling in product data through the Shopify APIs. This is a massive site, and performed extremely well as the company grew. I\'m SUPER proud of the work I was able to do at Mizzen.</p>\
@@ -68,10 +76,18 @@ export const projects = [
     media:
       'https://soundcloud.com/the-beta-release/the-release?in=the-beta-release/sets/first-four-demo/s-GJmPNOdFLgZ&si=3532862927724aefafb5105e8ec32838&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
     mediaType: 'audio',
-    skills: ['Writing/Arranging/Production', 'Bass Guitar', 'Guitar', 'Synths', 'Drum Programming'],
+    skills: [
+      'Writing',
+      'Arranging',
+      'Production',
+      'Bass Guitar',
+      'Guitar',
+      'Synths',
+      'Drum Programming',
+    ],
     notes:
       "<p>Ah, 2020... What a miserable year you were. Well, being locked down for months with the family was tough, but during that time, I wound up starting a little \"COVID project\" that turned out to be something special.</p>\
-    <p>Over the years, I'd always thought about making my own album, but never really had the inspiration to do it. In the effort to pass the time during the pandemic, I decided to \"just do it\" and start recording whatever came to mind at the moment.  The result was my new music project, The Beta Release.</p>\
+    <p>Over the years, I'd always thought about making my own album, but never really had the inspiration to do it. In the effort to pass the time during the pandemic, I decided to \"just do it\" and start recording whatever came to mind at the moment.  The result was my new music project, <strong>The Beta Release</strong>.</p>\
     <p>I was able to get 4 songs recorded before life kicked in again, and this - an instrumental called <em>The Release</em> - is the first one that's ready to share.  The other 3 are mostly hard rock remakes of old electro-pop songs from the 80s/90s, but since I'm not really a vocalist, I'm working on bringing in someone else to handle that. Hopefully I'll be able to share those soon as well.</p>\
     <p>I hope that life will allow me to continue this project into the future.  I have a many more ideas for song remakes.  We'll see if they ever make it out of my head.</p>",
   },
@@ -88,7 +104,7 @@ export const projects = [
     url: 'http://valecounseling.com',
     media: '',
     mediaType: '',
-    skills: ['HTML/CSS/JS', 'CraftCMS', 'Twig', 'Website Design', 'Logo Design'],
+    skills: ['HTML', 'CSS', 'JS', 'CraftCMS', 'Twig', 'Website Design', 'Logo Design'],
     notes:
       "<p>This was kind of a fun \"passion project\" for my wife's former counseling practice. It's several years old now, but it's still a favorite of mine, and still serves the practice well.</p>\
     <p>I handled everything from design to development - even helping them with a new logo - and it's got a super nice, fully custom CMS, built with CraftCMS. I'm really proud of this one.</p>",
@@ -106,7 +122,7 @@ export const projects = [
     url: '',
     media: '/images/work/video/adopted-walkthrough-web.mp4',
     mediaType: 'walkthrough',
-    skills: ['HTML/CSS/JS', 'ExpressionEngine'],
+    skills: ['HTML', 'CSS', 'JS', 'ExpressionEngine'],
     notes:
       "<p>One of the big clients we had when I was working at Switch was the Gladney Center for Adoption. <strong>AdoptED</strong> was a program of theirs dedicated to promoting adoption through education. We were able to have a little fun with the design of this site, and push the boundaries a bit with the layout and interface. I love its look and feel, and had a lot of fun developing it.\
       <p>It was built using ExpressionEngine, which at the time was one of the best CMS platforms around. It also featured big, bold, fullscreen images and aggressive colors, along with some slick parallaxing that was all the rage at the time. I still think it's pretty cool.<p>\
@@ -126,8 +142,18 @@ export const projects = [
     media:
       'https://soundcloud.com/the-beta-release/tots-nugs?si=ac1f0deed53e4c989695d00be8cad362&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
     mediaType: 'audio',
-    skills: ['Writing/Arranging/Production', 'Vocals', 'Bass Guitar', 'Guitar', 'Drum Programming'],
-    notes: 'Notes will go here.',
+    skills: [
+      'Writing',
+      'Arranging',
+      'Production',
+      'Vocals',
+      'Bass Guitar',
+      'Guitar',
+      'Drum Programming',
+    ],
+    notes:
+      '<p>So, sometimes a dad has to do some silly stuff to get his kids to go along with things. For whatever reason, my boys would moan every time I would tell them we were having chicken nuggets and tater tots for dinner (it\'s a regular around here). To lighten the mood, I started singing an off-the-cuff song about "Tots & Nuggs", which would annoy them/make them laugh enough to where they would stop whining. Over time, the song evolved in my head, so I decided to record it as a goof. And the rest is history.</p>\
+      <p>Fun fact: this is the first time I\'ve ever sung lead vocals on a song. After 40 years of playing in bands, I guess it took chicken nuggets and tater tots to give me enough inspiration to try it. <pre>¯\\_(ツ)_/¯</pre></p>',
   },
   {
     id: 'maridoe',
@@ -142,8 +168,9 @@ export const projects = [
     url: 'https://maridoe.com/',
     media: '',
     mediaType: '',
-    skills: ['HTML/CSS/JS', 'CraftCMS', 'Twig'],
-    notes: 'Notes will go here.',
+    skills: ['HTML', 'CSS', 'JS', 'CraftCMS', 'Twig'],
+    notes:
+      '<p>Maridoe is a relatively new golf course in the Dallas area.  We were brought on pretty early to create a very "high-end" feeling site to promote the new club.  This site features lots of slick animated transitions, and a beautiful fullscreen drone video of the course as a background for the homepage.  This one still hold up pretty well, I think.  It\'s fully content managed through a custom CraftCMS build.</p>',
   },
   {
     id: 'criquet',
@@ -158,8 +185,9 @@ export const projects = [
     url: '',
     media: '',
     mediaType: '',
-    skills: ['HTML/CSS/JS', 'Shopify'],
-    notes: 'Notes will go here.',
+    skills: ['HTML', 'CSS', 'JS', 'Liquid', 'Custom Shopify Themeing'],
+    notes:
+      "<p>Criquet Shirts is a fun men's clothing company based in Austin, TX.  As they were starting to really take off, I was brought in to give the site a refresh.  I built a new custom Shopify theme for the site that really took things to the next level.  Unfortunately, they've since changed their theme, and there isn't really a good archive of the site in its older state. The best I can do is a cool shot of the homepage.</p>",
   },
   {
     id: 'the-laurel',
@@ -174,8 +202,10 @@ export const projects = [
     url: '',
     media: '/images/work/video/thelaurel-walkthrough-web.mp4',
     mediaType: 'walkthrough',
-    skills: ['HTML/CSS/JS', 'CraftCMS', 'Twig'],
-    notes: 'Notes will go here.',
+    skills: ['HTML', 'CSS', 'JS', 'CraftCMS', 'Twig'],
+    notes:
+      '<p>The Laurel is a high-end wedding and special event facility in the Dallas area.  Switch created a knock-out of a design for their launch, and I was able to make this a real marquis site.  It was all focused around photography, which was sourced from local photographers who had worked events there.  As part of the massive CMS (CraftCMS), we were able to cite each of the photos throughout the site with links to the vendor sites.</p>\
+    <p>The website featured beautiful full screen photos, along with some really creative parallaxed interfaces and animated transitions.  This was one of my absolute favorite sites I built at that time, and the custom CMS I built was a thing of beauty (if I may say so myself).  Just about every element of the site was content-managed by the client through the CMS.</p>',
   },
   {
     id: 'the-interrogation',
@@ -190,8 +220,11 @@ export const projects = [
     url: '',
     media: 'https://youtu.be/lhPjK90urgk',
     mediaType: 'video',
-    skills: ['Screenplay/Direction/Cinematography', 'Video Editing', 'Acting?'],
-    notes: 'Notes will go here.',
+    skills: ['Screenplay', 'Direction', 'Cinematography', 'Video Editing', 'Acting?'],
+    notes:
+      '<p>While I was at Mizzen+Main, we would do silly videos for social media and internal stuff once in a while.  In 2022, each of the company\'s "all-hands" meetings featured one of the departments of the corporate HQ.  Each of the employees of the featured department was tasked to make a short video, where they would answer a set of questions about themselves.  It was a simple get-to-know-you thing for the company.</p>\
+    <p>Well, the videos I had made while I was there always featured my sons (I think they\'re pretty awesome), so when it was my turn to make the "get-to-know-you" video, I kinda went a little overboard with it.  The boys and I had a nighttime video shoot at the office, with them questioning me as if they were 70s-era TV detectives interrogating a perp.  It was so much fun, and we actually knocked it out in about and hour.  Not bad for a couple rookie actors.  They totally killed it, and I couldn\'t be more proud of how this silly little video turned out. </p>\
+    <p>WARNING: Contains some inside jokes that won\'t make any sense outside the office.</p>',
   },
   {
     id: 'jordan',
@@ -206,7 +239,7 @@ export const projects = [
     url: '',
     media: '',
     mediaType: '',
-    skills: ['HTML/CSS/JS', 'Flash Programming', 'Website Design'],
+    skills: ['HTML', 'CSS', 'JS', 'Flash Programming', 'Website Design'],
     notes: 'Notes will go here.',
   },
   {
@@ -238,7 +271,7 @@ export const projects = [
     url: 'https://adoptionsbygladney.com/',
     media: '',
     mediaType: '',
-    skills: ['HTML/CSS/JS', 'CraftCMS', 'Twig'],
+    skills: ['HTML', 'CSS', 'JS', 'CraftCMS', 'Twig'],
     notes: 'Notes will go here.',
   },
   {
@@ -270,7 +303,7 @@ export const projects = [
     url: '',
     media: '/images/work/video/falchi-walkthrough-web.mp4',
     mediaType: 'walkthrough',
-    skills: ['HTML/CSS/JS', 'CraftCMS', 'Twig'],
+    skills: ['HTML', 'CSS', 'JS', 'CraftCMS', 'Twig'],
     notes: 'Notes will go here.',
   },
   {
@@ -286,7 +319,7 @@ export const projects = [
     url: 'http://birdsofplay.boots.media/',
     media: '',
     mediaType: '',
-    skills: ['HTML/CSS/JS', 'CraftCMS', 'Twig', 'Website Design', 'Logo Design'],
+    skills: ['HTML', 'CSS', 'JS', 'CraftCMS', 'Twig', 'Website Design', 'Logo Design'],
     notes: 'Notes will go here.',
   },
   {
@@ -302,7 +335,7 @@ export const projects = [
     url: 'https://bbre1.com/',
     media: '',
     mediaType: '',
-    skills: ['HTML/CSS/JS', 'CraftCMS', 'Twig'],
+    skills: ['HTML', 'CSS', 'JS', 'CraftCMS', 'Twig'],
     notes: 'Notes will go here.',
   },
   {
@@ -318,7 +351,7 @@ export const projects = [
     url: '',
     media: '/images/work/video/hinge-walkthrough-web.mp4',
     mediaType: 'walkthrough',
-    skills: ['HTML/CSS/JS', 'ExpressionEngine'],
+    skills: ['HTML', 'CSS', 'JS', 'ExpressionEngine'],
     notes: 'Notes will go here.',
   },
   {
@@ -350,7 +383,7 @@ export const projects = [
     url: 'http://dallasguitarrepair.boots.media/',
     media: '',
     mediaType: '',
-    skills: ['HTML/CSS/JS', 'CraftCMS', 'Twig', 'Website Design', 'Logo Design'],
+    skills: ['HTML', 'CSS', 'JS', 'CraftCMS', 'Twig', 'Website Design', 'Logo Design'],
     notes: 'Notes will go here.',
   },
   {
@@ -382,7 +415,7 @@ export const projects = [
     url: '',
     media: '/images/work/video/pregnancyhotline-walkthrough-web.mp4',
     mediaType: 'walkthrough',
-    skills: ['HTML/CSS/JS', 'ExpressionEngine'],
+    skills: ['HTML', 'CSS', 'JS', 'ExpressionEngine'],
     notes: 'Notes will go here.',
   },
   {
@@ -414,7 +447,7 @@ export const projects = [
     url: '',
     media: '/images/work/video/doubler-walkthrough-web.mp4',
     mediaType: 'walkthrough',
-    skills: ['HTML/CSS/JS', 'Liquid', 'Shopify'],
+    skills: ['HTML', 'CSS', 'JS', 'Liquid', 'Custom Shopify Themeing'],
     notes: 'Notes will go here.',
   },
 ]

@@ -22,6 +22,7 @@ type ModalProps = {
   outsideClose?: boolean
   fullscreenMobile?: boolean
   bottomFade?: boolean
+  hasDots?: boolean
   size?: keyof typeof MODAL_VARIANTS
   onOpenChange?: (open: boolean) => void
 }
@@ -34,6 +35,7 @@ const Modal = ({
   outsideClose = false,
   fullscreenMobile = false,
   bottomFade = false,
+  hasDots = false,
   size = 'small',
   onOpenChange,
   ...props
@@ -59,6 +61,7 @@ const Modal = ({
               data-outside-close={outsideClose}
               data-fullscreen-mobile={fullscreenMobile}
               data-bottom-fade={bottomFade}
+              data-has-dots={hasDots}
               forceMount
               asChild
             >

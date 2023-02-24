@@ -63,7 +63,7 @@
     }
   }
 
-  &[data-bottom-fade="true"] {
+  /* &[data-bottom-fade="true"] {
     &::before {
       background-image: linear-gradient(#eee0, #eee 85%);
       bottom: 0;
@@ -75,6 +75,14 @@
       position: absolute;
       right: 0;
       z-index: 5;
+    }
+  } */
+
+  &[data-has-dots="true"] {
+    @media screen and (orientation: landscape) {
+      background-image: url("/images/halftone-dots.png");
+      background-position: left bottom;
+      background-repeat: no-repeat;
     }
   }
 }

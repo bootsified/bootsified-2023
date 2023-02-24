@@ -95,6 +95,7 @@ const Project = ({ project }: ProjectProps) => {
         }}
         fullscreenMobile
         bottomFade
+        hasDots
         size="flex"
       >
         <ProjectDetails project={project} />
