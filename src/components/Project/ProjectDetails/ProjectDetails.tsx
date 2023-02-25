@@ -2,12 +2,14 @@
 
 import React, { useRef, useState } from 'react'
 import ReactPlayer from 'react-player'
+import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import Button from '@/components/Button'
 
 import styles from './ProjectDetails.module.css'
+import richStyles from '@styles/rich-text.module.css'
 
 type ProjectProps = {
   project: {
@@ -125,7 +127,10 @@ const ProjectDetails = ({ project }: ProjectProps) => {
         </div>
 
         {notes !== '' && (
-          <div className={styles.notes} dangerouslySetInnerHTML={{ __html: notes }} />
+          <div
+            className={clsx(styles.notes, richStyles.richText)}
+            dangerouslySetInnerHTML={{ __html: notes }}
+          />
         )}
       </div>
     </div>
