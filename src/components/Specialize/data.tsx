@@ -39,7 +39,7 @@ export const skillRatings = [
   },
   {
     id: 'music',
-    category: 'Music/Media',
+    category: 'Music/Media/Other',
     skills: [
       {
         skill: 'Bass Guitar',
@@ -68,6 +68,10 @@ export const skillRatings = [
       {
         skill: 'Video Production',
         rating: 4,
+      },
+      {
+        skill: 'Kicking Ass',
+        rating: 5,
       },
     ],
   },

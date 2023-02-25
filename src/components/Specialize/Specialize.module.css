@@ -6,6 +6,11 @@
   color: #fff;
   padding-bottom: 6rem;
   padding-top: 4rem;
+
+  ::selection {
+    background-color: var(--text-reverse);
+    color: var(--color-pri);
+  }
 }
 
 .inner {
