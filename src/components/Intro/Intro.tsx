@@ -22,7 +22,6 @@ const Intro = () => {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    console.log('ALWAYS_POPUP', ALWAYS_POPUP)
     if (!sessionStorage.getItem('visited') || ALWAYS_POPUP) {
       sessionStorage.setItem('visited', 'true')
       setTimeout(() => {
