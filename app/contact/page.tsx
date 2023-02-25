@@ -1,8 +1,6 @@
 import React from 'react'
 
 import Contact from '@/components/Contact'
-import ScrollUp from '@/components/ScrollUp/ScrollUp'
-import { SITE_URL } from '@/utils/constants'
 
 ////////////////////////////////////////////////////////
 // TODO: When they get their shit together, here you go:
@@ -29,12 +27,7 @@ import { SITE_URL } from '@/utils/constants'
 // }
 
 const ContactPage = () => {
-  return (
-    <>
-      {/* <ScrollUp /> */}
-      <Contact />
-    </>
-  )
+  return <Contact />
 }
 
 export default ContactPage

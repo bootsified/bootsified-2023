@@ -2,7 +2,6 @@ import React from 'react'
 import { projects, sections } from 'app/work/data'
 
 import Project from '@/components/Project'
-import ScrollUp from '@/components/ScrollUp/ScrollUp'
 
 import styles from '@components/Work/Work.module.css'
 
@@ -23,7 +22,6 @@ const WorkPage = ({ params }: WorkProps) => {
 
   return (
     <>
-      {/* <ScrollUp /> */}
       {activeSection?.description && (
         <p dangerouslySetInnerHTML={{ __html: activeSection?.description }} />
       )}

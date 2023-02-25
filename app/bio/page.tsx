@@ -1,9 +1,7 @@
 import React from 'react'
 import Bio from '@components/Bio'
 
-import ScrollUp from '@/components/ScrollUp/ScrollUp'
 import Specialize from '@/components/Specialize'
-import { SITE_URL } from '@/utils/constants'
 
 ////////////////////////////////////////////////////////
 // TODO: When they get their shit together, here you go:
@@ -31,7 +29,6 @@ import { SITE_URL } from '@/utils/constants'
 const BioPage = () => {
   return (
     <>
-      {/* <ScrollUp /> */}
       <Bio />
       <Specialize />
     </>
