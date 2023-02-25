@@ -10,9 +10,11 @@ import Button from '@/components/Button'
 import styles from './ContactForm.module.css'
 
 const ContactForm = () => {
-  const [buttonLabel, setButtonLabel] = useState('Send it')
+  const defaultSubmitLabel = 'Send it'
+  const [buttonLabel, setButtonLabel] = useState(defaultSubmitLabel)
   const [thanksName, setThanksName] = useState('')
   const [success, setSuccess] = useState(false)
+  const [errorMessage, setErrorMessage] = useState('')
   const [disabled, setDisabled] = useState(false)
   const formRef = useRef<HTMLFormElement>(null)
   const nameRef = useRef<HTMLInputElement>(null)
@@ -30,7 +32,10 @@ const ContactForm = () => {
     fetch(scriptUrl, { method: 'POST', body: new FormData(event.target) })
       .then(response => {
         // console.log('Success!', response)
-        setButtonLabel('Send it')
+        setButtonLabel('HUZZAH!!!')
+        setTimeout(() => {
+          setButtonLabel(defaultSubmitLabel)
+        }, 2000)
         setThanksName(nameRef.current?.value.split(' ')[0] || 'friend')
         setSuccess(true)
         setDisabled(false)
@@ -38,7 +43,15 @@ const ContactForm = () => {
         emailRef!.current!.value = ''
         messageRef!.current!.value = ''
       })
-      .catch(error => console.error('Error!', error.message))
+      .catch(error => {
+        console.error('Error!', error.message)
+        setErrorMessage(error.message)
+        setButtonLabel("Dangit! Let's try that again...")
+        setTimeout(() => {
+          setButtonLabel(defaultSubmitLabel)
+        }, 2000)
+        setDisabled(false)
+      })
   }
 
   return (
@@ -57,6 +70,14 @@ const ContactForm = () => {
           <Alert className={styles.alert} alertType="success">
             <h2>Thanks, {thanksName}!</h2>
             <p>Your message was sent.</p>
+          </Alert>
+        )}
+
+        {errorMessage !== '' && (
+          <Alert className={styles.alert} alertType="error">
+            <h2>Awww, biscuits!</h2>
+            <p>There was a problem sending your message:</p>
+            <p>{errorMessage}</p>
           </Alert>
         )}
 

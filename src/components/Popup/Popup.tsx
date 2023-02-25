@@ -24,7 +24,7 @@ const Popup = () => {
               My web work
             </Button>
           </Link>
-          <Link href="/contact">
+          <Link href="/pdf/john-boots-highland-resume-2023.pdf" download>
             <Button isLink variant="primary">
               My resumé
             </Button>

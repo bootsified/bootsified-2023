@@ -27,3 +27,10 @@
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   margin-top: 4rem;
 }
+
+.noResults {
+  font-size: 1.25em;
+  grid-column-end: -1;
+  grid-column-start: 1;
+  text-align: center;
+}

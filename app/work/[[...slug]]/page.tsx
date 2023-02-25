@@ -30,7 +30,7 @@ const WorkPage = ({ params }: WorkProps) => {
           filteredProjects.map(proj => <Project key={proj.id} project={proj} />)
         ) : (
           <p className={styles.noResults}>
-            Oooops... There aren&rsquo;t any results for this category :(
+            Oooops... There aren&rsquo;t any results for&nbsp;this&nbsp;category :(
           </p>
         )}
       </div>
