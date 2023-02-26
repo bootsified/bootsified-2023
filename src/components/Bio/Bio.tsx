@@ -35,7 +35,7 @@ const Bio = () => {
         </p>
 
         <p>
-          As a web developer, I specialize in advanced HTML/CSS layouts, that are cross-browser,
+          As a web developer, I specialize in advanced HTML/CSS layouts that are cross-browser,
           accessible, and responsive to any device size. I’m experienced with vanilla JavaScript,
           and have become very familiar with React components and Next.js over the last couple
           years. I’ve also had significant real-world experience running a large eCommerce store
