@@ -3,6 +3,7 @@ import photoKid from '@public/images/john-boots-highland-kid.jpg'
 import photoYard from '@public/images/john-boots-highland-yard.jpg'
 import clsx from 'clsx'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import styles from './Bio.module.css'
 import richStyles from '@styles/rich-text.module.css'
@@ -21,38 +22,54 @@ const Bio = () => {
           />
         </div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit amet. Augue
-          neque gravida in fermentum et sollicitudin ac orci phasellus. Amet est placerat in egestas
-          erat imperdiet sed. Sed enim ut sem viverra aliquet eget. In nulla posuere sollicitudin
-          aliquam. Vel quam elementum pulvinar etiam non quam lacus. Tempor id eu nisl nunc mi ipsum
-          faucibus vitae aliquet. Pellentesque habitant morbi tristique senectus et netus. Imperdiet
-          dui accumsan sit amet nulla facilisi morbi tempus iaculis. Volutpat consequat mauris nunc
-          congue nisi vitae suscipit tellus. Quam adipiscing vitae proin sagittis nisl rhoncus
-          mattis rhoncus urna. Enim blandit volutpat maecenas volutpat. Convallis a cras semper
-          auctor. Et netus et malesuada fames. Sit amet nulla facilisi morbi. Semper auctor neque
-          vitae tempus. In eu mi bibendum neque egestas congue quisque egestas.
+          My name is <strong>John Highland</strong>, but most people call me{' '}
+          <strong>“Boots”</strong> - long story. I’m a web developer, musician, husband, and father
+          of two awesome boys, currently living in Dallas, TX (soon to be Seattle, WA… more on that
+          coming soon). I was born in Cincinnati, OH, but my family moved to Dallas when I was two.
+          As they say, “I’m not a native Texan, but I got here as soon as I could.” Aside from a few
+          years in Ft Worth for college (
+          <Link href="https://www.tcu.edu/" target="_blank">
+            GO FROGS!
+          </Link>
+          ) and a couple years in Austin for a job, I’ve lived here ever since.
         </p>
 
         <p>
-          Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Pharetra convallis posuere
-          morbi leo urna molestie at elementum eu. Non sodales neque sodales ut. Quis auctor elit
-          sed vulputate mi sit amet mauris commodo. Quis viverra nibh cras pulvinar mattis nunc sed.
-          Viverra suspendisse potenti nullam ac tortor vitae purus. Massa tincidunt nunc pulvinar
-          sapien et ligula ullamcorper malesuada. Sed blandit libero volutpat sed cras. Nisi lacus
-          sed viverra tellus in hac habitasse platea. Ante in nibh mauris cursus mattis molestie a.
+          As a web developer, I specialize in advanced HTML/CSS layouts, that are cross-browser,
+          accessible, and responsive to any device size. I’m experienced with vanilla JavaScript,
+          and have become very familiar with React components and Next.js over the last couple
+          years. I’ve also had significant real-world experience running a large eCommerce store
+          (Shopify), as the Sr Manager of Web Development for the performance menswear company,
+          Mizzen+Main. In my 4.5 years with Mizzen, we ran into all kinds of ups and downs, and I
+          was always able to get us across the finish line. It might be a love/hate relationship,
+          but I definitely know Shopify.
         </p>
 
         <p>
-          Varius sit amet mattis vulputate. Ut tellus elementum sagittis vitae. Facilisi morbi
-          tempus iaculis urna id volutpat. Sapien pellentesque habitant morbi tristique senectus et
-          netus et. Sed sed risus pretium quam vulputate dignissim suspendisse in est. Eget sit amet
-          tellus cras adipiscing enim eu turpis egestas. Tortor consequat id porta nibh venenatis
-          cras sed. Integer quis auctor elit sed vulputate mi sit. Sed adipiscing diam donec
-          adipiscing tristique risus. Bibendum arcu vitae elementum curabitur vitae nunc. Amet
-          consectetur adipiscing elit duis tristique sollicitudin nibh sit. Orci nulla pellentesque
-          dignissim enim. Auctor urna nunc id cursus metus aliquam eleifend. Lacus suspendisse
-          faucibus interdum posuere.
+          So essentially, my key skill is problem solving. In the 25+ years I’ve been building and
+          managing websites, I’ve just about seen it all, so as the great American poet,{' '}
+          <Link href="https://en.wikipedia.org/wiki/Vanilla_Ice" target="_blank">
+            Robert Matthew Van Winkle
+          </Link>
+          , once put it,{' '}
+          <em>
+            “
+            <Link href="https://youtu.be/rog8ou-ZepE?t=51" target="_blank">
+              If there was a problem, YO! I’ll solve it.
+            </Link>
+            ”
+          </em>
+        </p>
+
+        <p>
+          As a musician, I’ve been primarily a bass guitarist for about 40 years, and I toured
+          professionally with various rock bands for nearly 15 years of that. In addition to bass
+          guitar, I also play acoustic bass, guitar, drums, and cello (my first instrument); and
+          have experience with synth programming and studio mixing and producing - mostly with Logic
+          Pro. Music has taken a back seat for me, since web development took over, but I still try
+          to get back to it from time to time. I actually have{' '}
+          <Link href="/work/music">an album of my own</Link> in the works that will hopefully see
+          the light of day sometime in 2023. I’ll keep you posted.
         </p>
 
         <div className={styles.footerImage}>

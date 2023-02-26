@@ -8,4 +8,8 @@
       outline-color: var(--color-pri);
     }
   }
+
+  & em {
+    font-style: oblique;
+  }
 }
