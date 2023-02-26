@@ -11,7 +11,7 @@ import richStyles from '@styles/rich-text.module.css'
 const Bio = () => {
   return (
     <div className={clsx(styles.container, richStyles.richText)}>
-      <h1 className={styles.heading}>This is my story...</h1>
+      <h1 className={styles.heading}>A little about me...</h1>
       <div className={styles.content}>
         <div className={styles.headerImage}>
           <Image
