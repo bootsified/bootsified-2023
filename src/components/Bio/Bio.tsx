@@ -5,6 +5,8 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { spanBass, spanWeb } from '@/utils/helpers'
+
 import styles from './Bio.module.css'
 import richStyles from '@styles/rich-text.module.css'
 
@@ -41,13 +43,14 @@ const Bio = () => {
           years. I’ve also had significant real-world experience running a large eCommerce store
           (Shopify), as the Sr Manager of Web Development for the performance menswear company,
           Mizzen+Main. In my 4.5 years with Mizzen, we ran into all kinds of ups and downs, and I
-          was always able to get us across the finish line. It might be a love/hate relationship,
+          was always able to get us across the finish line. It’s been an up and down relationship,
           but I definitely know Shopify.
         </p>
 
         <p>
-          So essentially, my key skill is problem solving. In the 25+ years I’ve been building and
-          managing websites, I’ve just about seen it all, so as the great American poet,{' '}
+          So essentially, my key skill is problem solving. In the {spanWeb()} years I’ve been
+          building and managing websites, I’ve just about seen it all, so as the great American
+          poet,{' '}
           <Link href="https://en.wikipedia.org/wiki/Vanilla_Ice" target="_blank">
             Robert Matthew Van Winkle
           </Link>
@@ -62,7 +65,7 @@ const Bio = () => {
         </p>
 
         <p>
-          As a musician, I’ve been primarily a bass guitarist for about 40 years, and I toured
+          As a musician, I’ve been primarily a bass guitarist for {spanBass()} years, and I toured
           professionally with various rock bands for nearly 15 years of that. In addition to bass
           guitar, I also play acoustic bass, guitar, drums, and cello (my first instrument); and
           have experience with synth programming and studio mixing and producing - mostly with Logic

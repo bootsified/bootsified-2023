@@ -3,7 +3,7 @@ export const sections = [
     id: 'all',
     label: 'All Projects',
     description:
-      "Here's a little bit of everything.  Some are pretty random... some are *really* old (#NoRegerts). For my web projects, so many of these either no longer exist, or have been redeveloped since I launched them. Archived links *might* be available upon request.",
+      "Here's a little bit of everything.  Some are pretty random... some are *really* old (<code>#NoRegerts</code>). For my web projects, so many of these either no longer exist, or have been redeveloped since I launched them. Archived links *might* be available upon request.",
     seo: "Here is a few of the various projects I've had over the years - websites, music, goofy videos, etc.",
   },
   {
@@ -36,10 +36,30 @@ export const sections = [
 
 export const projects = [
   {
+    id: 'bootsified',
+    title: 'Boots ’23',
+    client: 'Boots',
+    year: '2023',
+    projectType: 'Website',
+    category: 'web-dev',
+    agency: 'Boots',
+    logo: '/images/work/logos/bootsified-logo.png',
+    screenshot: '/images/work/screenshots/boots2023-screenshot.jpg',
+    url: '',
+    media: '',
+    mediaType: '',
+    skills: ['HTML', 'CSS', 'JS', 'Next.js/React', 'Website Design', 'Logo Design'],
+    notes:
+      '<p>For the first time in almost 20 years, I\'ve found myself in need of a full portfolio website.  I have to say, it was really fun getting to build something for me for a change.</p>\
+      <p>I needed to slap this together ASAP, so it kinda reminded me of when my wife and I were looking at houses years ago.  We visited one old house that was OBVIOUSLY flipped really fast for a quick sale.  There were places where the paint was still wet and even dripping.  So, welcome to my hastily slapped together website.  Sorry about the wet paint.</p>\
+      <p>I built this site using <a href="https://nextjs.org" target="_blank">Next.js</a>, with hosting by <a href="https://vercel.com" target="_blank">Vercel</a>.  I have to say, Next.js/Vercel is such a wonderful development experience.  I started working with Next.js with the Mizzen+Main website, and I don\'t think I would choose anything else at this point.  It\'s just so easy.</p>\
+      <p>I\'m also introducing my new branding, including my new official brand color, <code>#B00075</code> (get it?). Apparently, it\'s called "<a href="https://www.color-name.com/hex/b00075" target="_blank">Flirt</a>" &#129300;. I never would have chosen a hot pink for myself, but I think this is a case where the color chose me.  It\'s actually really grown on me.</p>',
+  },
+  {
     id: 'mizzen',
     title: 'Mizzen+Main',
     client: 'Mizzen+Main',
-    year: '2016-2023',
+    year: '2018-2023',
     projectType: 'Website',
     category: 'web-dev',
     agency: 'Mizzen+Main',
@@ -92,6 +112,25 @@ export const projects = [
     <p>I hope that life will allow me to continue this project into the future.  I have a many more ideas for song remakes.  We'll see if they ever make it out of my head.</p>",
   },
   {
+    id: 'canalesco',
+    title: 'Canales & Co',
+    client: 'Canales & Co',
+    year: '2018',
+    projectType: 'Website',
+    category: 'web-dev',
+    agency: 'Good Work',
+    logo: '/images/work/logos/canalesco-logo.png',
+    screenshot: '/images/work/screenshots/canalesco-screenshot.jpg',
+    url: 'http://canalesco.com',
+    media: '',
+    mediaType: '',
+    skills: ['HTML', 'CSS', 'JS', 'CraftCMS', 'Twig'],
+    notes:
+      "<p>The last website I built while I was at Good Work was for a design agency in Austin, called <strong>Canales & Co</strong>.  They specialize in product branding, with much of their work in the beverage industry. I absolutely LOVE these guys.  SO creative, and simply beautiful designs.</p>\
+      <p>They knew what they wanted for a website, but came to us to build it.  So, I took their designs and built a custom content-managed website, using CraftCMS.  I wanted to make it so they could easilyn keep it updated with their latest work, so I put a lot of time into the CMS.  This project was almost 100% photography, with a complex masonry layout.  CraftCMS's customizeable content blocks really came in handy here.</p>\
+      <p>The Canales & Co website is still one of my all-time favorites, and I'd love to be able to work with their designs again sometime in the future.  Go check them out!</p>",
+  },
+  {
     id: 'vale',
     title: 'Vale Counseling',
     client: 'Vale Counseling',
@@ -126,7 +165,7 @@ export const projects = [
     notes:
       "<p>One of the big clients we had when I was working at Switch was the Gladney Center for Adoption. <strong>AdoptED</strong> was a program of theirs dedicated to promoting adoption through education. We were able to have a little fun with the design of this site, and push the boundaries a bit with the layout and interface. I love its look and feel, and had a lot of fun developing it.</p>\
       <p>It was built using ExpressionEngine, which at the time was one of the best CMS platforms around. It also featured big, bold, fullscreen images and aggressive colors, along with some slick parallaxing that was all the rage at the time. I still think it's pretty cool.<p>\
-      <p>Sadly, it no longer exists, so the best I can do is show you a walkthrough video. #WompWomp</p>",
+      <p>Sadly, it no longer exists, so the best I can do is show you a walkthrough video. <code>#WompWomp</code></p>",
   },
   {
     id: 'tots-nuggs',
@@ -242,9 +281,9 @@ export const projects = [
     skills: ['HTML', 'CSS', 'JS', 'Flash Programming', 'Website Design'],
     notes:
       '<p>While freelancing in 2004, I received a random call from a friend, saying the <strong>Jordan Tourism Board</strong> (where they worked) was looking for someone to build a new website for them.  They were looking to make a new push to promote the Kingdom of Jordan to American tourists.  So naturally, I said, "Let\'s <em>DO</em> this!" <pre>¯\\_(ツ)_/¯</pre></p>\
-    <p>Mind you, this was 2004, so I didn\'t build it AT ALL like I would today &mdash; lots of Flash, and every page was hardcoded, with common elements included with SHTML #OldSchool.  For a site this large, that meant a LOT of individual files to keep up with.  Yet, it turned out great, and they loved it.</p>\
-    <p>The website launched in late 2004, and was unveiled at an international tourism conference by King Abdullah II himself.  As part of my compensation, I was invited to Jordan for a VIP tour of the country the following year, including a visit to the Royal Palace (unfortunately, the King was away at the time #WompWomp).  It was an amazing adventure that still seems like a dream to me, and I found a great love and respect for Jordan through that experience.</p>\
-    <p>Of course, this site is pretty ancient when it comes to the web, so no functional archives are available #RIPFlash.  I was lucky to even piece together a screenshot of the Flash homepage.</p>',
+    <p>Mind you, this was 2004, so I didn\'t build it AT ALL like I would today &mdash; lots of Flash, and every page was hardcoded, with common elements included with SHTML <code>#OldSchool</code>.  For a site this large, that meant a LOT of individual files to keep up with.  Yet, it turned out great, and they loved it.</p>\
+    <p>The website launched in late 2004, and was unveiled at an international tourism conference by King Abdullah II himself.  As part of my compensation, I was invited to Jordan for a VIP tour of the country the following year, including a visit to the Royal Palace (unfortunately, the King was away at the time <code>#WompWomp</code>).  It was an amazing adventure that still seems like a dream to me, and I found a great love and respect for Jordan through that experience.</p>\
+    <p>Of course, this site is pretty ancient when it comes to the web, so no functional archives are available <code>#RIPFlash</code>.  I was lucky to even piece together a screenshot of the Flash homepage.</p>',
   },
   {
     id: 'electrico',
@@ -334,7 +373,7 @@ export const projects = [
     notes:
       "<p>When one of the dads of a 4-6 year olds YMCA soccer team is a web developer, you sometimes find yourself with a WAY over-engineered website for the team.  That is definitely the case with the <strong>Birds of Play FC</strong> website.</p>\
     <p>It started with me designing a logo for their uniforms, which led to me cranking out a fully-CMS'ed website, with season schedule and game scores (even though they didn't actually keep an official score).  This was really a fun project for me, trying to make this little team of little kids look like a real soccer club.  We all had a lot of fun with it.  Sadly, the team only lasted one year, so the site now just exists as a historical record.</p>\
-    <p>The best part of the site was a large photo gallery from the games and practices, which I set up to pull from a Flickr group that the parents could post to.  Unfortunately, Flickr changed their rules a while back, and the photos had to be taken down.  So if you see a bunch of broken image links, there you have it.  #WompWomp</p>",
+    <p>The best part of the site was a large photo gallery from the games and practices, which I set up to pull from a Flickr group that the parents could post to.  Unfortunately, Flickr changed their rules a while back, and the photos had to be taken down.  So if you see a bunch of broken image links, there you have it.  <code>#WompWomp</code></p>",
   },
   {
     id: 'bluebird',
