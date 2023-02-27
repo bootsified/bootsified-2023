@@ -50,7 +50,7 @@ export const projects = [
     mediaType: '',
     skills: ['HTML', 'CSS', 'JS', 'Next.js/React', 'Website Design', 'Logo Design'],
     notes:
-      '<p>For the first time in almost 20 years, I\'ve found myself in need of a full portfolio website.  I have to say, it was really fun getting to build something for me for a change.</p>\
+      '<p>For the first time in almost 20 years, I\'ve found myself in need of a full portfolio website.  I have to say, it was really fun getting to build something for <strong><em>me</em></strong> for a change.</p>\
       <p>I needed to slap this together ASAP, so it kinda reminded me of when my wife and I were looking at houses years ago.  We visited one old house that was OBVIOUSLY flipped really fast for a quick sale.  There were places where the paint was still wet and even dripping.  So, welcome to my hastily slapped together website.  Sorry about the wet paint.</p>\
       <p>I built this site using <a href="https://nextjs.org" target="_blank">Next.js</a>, with hosting by <a href="https://vercel.com" target="_blank">Vercel</a>.  I have to say, Next.js/Vercel is such a wonderful development experience.  I started working with Next.js with the Mizzen+Main website, and I don\'t think I would choose anything else at this point.  It\'s just so easy.</p>\
       <p>I\'m also introducing my new branding, including my new official brand color, <code>#B00075</code> (get it?). Apparently, it\'s called "<a href="https://www.color-name.com/hex/b00075" target="_blank">Flirt</a>" &#129300;. I never would have chosen a hot pink for myself, but I think this is a case where the color chose me.  It\'s actually really grown on me.</p>',
