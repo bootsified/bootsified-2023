@@ -7,6 +7,8 @@ import Link from 'next/link'
 
 import { spanBass, spanWeb } from '@/utils/helpers'
 
+import BioNav from './BioNav'
+
 import styles from './Bio.module.css'
 import richStyles from '@styles/rich-text.module.css'
 
@@ -74,6 +76,15 @@ const Bio = () => {
           <Link href="/work/music">an album of my own</Link> in the works that will hopefully see
           the light of day sometime in 2023. I’ll keep you posted.
         </p>
+
+        <p>
+          So, this is kinda the CliffsNotes version of my story. If you have a minute, you can read
+          on below...
+        </p>
+
+        <div className={styles.navBottom}>
+          <BioNav />
+        </div>
 
         <div className={styles.footerImage}>
           <Image

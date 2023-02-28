@@ -29,7 +29,11 @@ const Nav = ({ className }: NavProps) => {
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="/bio" className={pathname === '/bio' ? styles.isActive : ''} scroll={true}>
+          <Link
+            href="/bio"
+            className={pathname?.includes('/bio') ? styles.isActive : ''}
+            scroll={true}
+          >
             Bio
           </Link>
         </li>
