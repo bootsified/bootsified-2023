@@ -43,7 +43,7 @@ const Bio = () => {
           years. I’ve also had significant real-world experience running a large eCommerce store
           (Shopify), as the Sr Manager of Web Development for the performance menswear company,
           Mizzen+Main. In my 4.5 years with Mizzen, we ran into all kinds of ups and downs, and I
-          was always able to get us across the finish line. It’s been an up and down relationship,
+          was always able to get us across the finish line. It’s been a rocky relationship at times,
           but I definitely know Shopify.
         </p>
 
