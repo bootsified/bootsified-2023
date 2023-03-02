@@ -40,7 +40,7 @@ const Bio = () => {
           As a web developer, I specialize in advanced HTML/CSS layouts that are cross-browser,
           accessible, and responsive to any device size. I’m experienced with vanilla JavaScript,
           and have become very familiar with React components and Next.js over the last couple
-          years. I’ve also had significant real-world experience running a large eCommerce store
+          years. I’ve also had significant real-world experience running a large eCommerce site
           (Shopify), as the Sr Manager of Web Development for the performance menswear company,
           Mizzen+Main. In my 4.5 years with Mizzen, we ran into all kinds of ups and downs, and I
           was always able to get us across the finish line. It’s been a rocky relationship at times,
