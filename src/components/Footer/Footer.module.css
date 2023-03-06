@@ -88,9 +88,12 @@
 }
 
 .splat {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 1rem;
+
   & svg {
     display: inline-block;
-    margin-bottom: 1rem;
     transition: all 150ms var(--ease-out-back);
 
     & [class*="splat"] {

@@ -1,0 +1,10 @@
+.container {
+  font-size: 1rem;
+  height: 7.125em;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 7.125em;
+  z-index: 100;
+}

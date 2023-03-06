@@ -6,6 +6,8 @@ import clsx from 'clsx'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+import { MY_LOCATION } from '@/utils/constants'
+
 import styles from './Footer.module.css'
 
 type FooterProps = {
@@ -37,7 +39,10 @@ const Footer = ({ className }: FooterProps) => {
           <span title="AKA love" className={styles.heart}>
             &hearts;
           </span>{' '}
-          from Dallas, TX
+          in{' '}
+          <span className="toolTip" data-tooltip="Moving to Seattle 06/23" tabIndex={0}>
+            Dallas, TX
+          </span>
         </p>
       </div>
     </footer>

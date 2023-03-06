@@ -5,6 +5,7 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { MY_LOCATION } from '@/utils/constants'
 import { spanBass, spanWeb } from '@/utils/helpers'
 
 import styles from './Bio.module.css'
@@ -26,10 +27,13 @@ const Bio = () => {
         <p>
           My name is <strong>John Highland</strong>, but most people call me{' '}
           <strong>“Boots”</strong> - long story. I’m a web developer, musician, husband, and father
-          of two awesome boys, currently living in Dallas, TX (soon to be Seattle, WA… more on that
-          coming soon). I was born in Cincinnati, OH, but my family moved to Dallas when I was two.
-          As they say, “I’m not a native Texan, but I got here as soon as I could.” Aside from a few
-          years in Ft Worth for college (
+          of two awesome boys, currently living in{' '}
+          <span className="toolTip" data-tooltip="Moving to Seattle 06/23" tabIndex={0}>
+            Dallas, TX
+          </span>
+          . I was born in Cincinnati, OH, but my family moved to Dallas when I was two. As they say,
+          “I’m not a native Texan, but I got here as soon as I could.” Aside from a few years in Ft
+          Worth for college (
           <Link href="https://www.tcu.edu/" target="_blank">
             GO FROGS!
           </Link>

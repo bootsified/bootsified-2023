@@ -55,7 +55,6 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  font-stretch: 85%;
   font-weight: 400;
   margin: 0 0 1em;
 }
@@ -69,6 +68,7 @@ a {
   transition: all var(--hover-duration) ease;
 
   &:has(span) {
+    display: inline-block;
     text-decoration: none;
   }
 }
@@ -80,6 +80,12 @@ button:focus {
   @nest [data-whatintent="keyboard"] & {
     outline: 2px dotted;
     outline-offset: 2px;
+  }
+}
+
+button:focus {
+  @nest [data-whatintent="keyboard"] & {
+    outline-color: var(--gray-10);
   }
 }
 
@@ -124,6 +130,46 @@ hr {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.toolTip {
+  border-bottom: 2px dotted var(--color-pri);
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.3;
+  position: relative;
+
+  &::after {
+    background-color: var(--gray-10);
+    border-radius: 4px;
+    bottom: 100%;
+    box-shadow: 2px 2px 8px #0006;
+    color: var(--text-reverse);
+    content: attr(data-tooltip);
+    font-size: 0.75em;
+    left: 50%;
+    line-height: 1.2;
+    min-width: 8em;
+    opacity: 0;
+    padding: 0.5em 0.75em;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, 10%);
+    transition: all var(--hover-duration) ease;
+  }
+
+  @nest [data-whatintent="mouse"] &:hover, &:focus {
+    &::after {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  @nest [data-whatintent="keyboard"] &:focus {
+    outline: 2px dotted;
+    outline-offset: 2px;
+  }
 }
 
 /* Handles hiding/showing of main header */
