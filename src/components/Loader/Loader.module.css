@@ -18,7 +18,7 @@
   text-indent: -9999em;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition-delay: 1000ms;
+  transition-delay: 500ms;
   transition-duration: 500ms;
   transition-property: opacity;
   transition-timing-function: ease;
