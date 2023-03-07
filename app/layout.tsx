@@ -3,8 +3,10 @@ import Header from '@components/Header'
 import Nav from '@components/Nav'
 import Link from 'next/link'
 
+import Loader from '@/components/Loader'
 import Progress from '@/components/Progress'
 import SeattleBadge from '@/components/SeattleBadge'
+import { UIProvider } from '@/context/UIContext'
 import { SITE_URL } from '@/utils/constants'
 
 import { AnalyticsWrapper } from './analytics'
@@ -80,7 +82,10 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en" className={`${gochiHand.variable} ${righteous.variable}`}>
       <head />
       <body className={styles.body}>
-        <Progress />
+        <UIProvider>
+          <Loader />
+          <Progress />
+        </UIProvider>
         <SeattleBadge />
         <Header className={styles.header} />
         <Nav className={styles.nav} />

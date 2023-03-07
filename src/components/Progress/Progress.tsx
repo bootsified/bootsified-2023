@@ -3,9 +3,13 @@
 import { useEffect } from 'react'
 import NProgress from 'nprogress'
 
+import { useUIContext } from '@/context/UIContext'
+
 type PushStateInput = [data: any, unused: string, url?: string | URL | null | undefined]
 
 export default function ProgressBar() {
+  const { setIsNavigating } = useUIContext()
+
   const height = '6px'
   const color = '#B00075'
 
@@ -49,6 +53,7 @@ export default function ProgressBar() {
       const targetUrl = (event.currentTarget as HTMLAnchorElement).href
       const currentUrl = location.href
       if (targetUrl !== currentUrl) {
+        setIsNavigating(true)
         NProgress.start()
       }
     }
@@ -64,6 +69,7 @@ export default function ProgressBar() {
     window.history.pushState = new Proxy(window.history.pushState, {
       apply: (target, thisArg, argArray: PushStateInput) => {
         NProgress.done()
+        setIsNavigating(false)
         return target.apply(thisArg, argArray)
       },
     })

@@ -25,10 +25,24 @@
     background-position: left bottom, right top;
     background-repeat: no-repeat;
   }
+
+  & > * {
+    animation: fade-in 500ms ease 1000ms both;
+  }
 }
 
 .footer {
   margin-top: auto;
   position: relative;
   z-index: 1;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
