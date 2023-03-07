@@ -14,6 +14,7 @@
   font-size: 0.5rem;
   left: 50%;
   opacity: 0;
+  pointer-events: none;
   position: fixed;
   text-indent: -9999em;
   top: 50%;
