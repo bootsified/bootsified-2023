@@ -18,7 +18,7 @@ import richStyles from '@styles/rich-text.module.css'
 const Intro = () => {
   const [open, setOpen] = useState(false)
 
-  console.log('spanWeb', spanWeb())
+  // console.log('spanWeb', spanWeb())
 
   useEffect(() => {
     if (!sessionStorage.getItem('visited') || ALWAYS_POPUP === 'true') {
@@ -36,14 +36,12 @@ const Intro = () => {
           <h1 className={styles.heading}>Hello!</h1>
           <p>
             My name is John Highland, but most people know me as{' '}
-            <strong>&ldquo;Boots&rdquo;</strong> &mdash; long story. I currently live in{' '}
-            <span className="toolTip" data-tooltip="Moving to Seattle 06/23" tabIndex={0}>
-              Dallas, TX
-            </span>
-            , with my very loving and understanding wife and two whacky sons. For {spanWeb()} years,
-            I’ve been developing websites, but my first passion was playing bass guitar (
-            {thisYear()} marks {spanBass()} years). Welcome to my home. Take a look around... make
-            yourself comfy. <Link href="/contact">Let me know</Link> if you need anything.
+            <strong>&ldquo;Boots&rdquo;</strong> &mdash; long story. I currently live in Dallas, TX
+            (moving to Seattle June 2023), with my very loving and understanding wife and two whacky
+            sons. For {spanWeb()} years, I’ve been developing websites, but my first passion was
+            playing bass guitar ({thisYear()} marks {spanBass()} years). Welcome to my home. Take a
+            look around... make yourself comfy. <Link href="/contact">Let me know</Link> if you need
+            anything.
           </p>
           <p className={styles.links}>
             <Link href="/bio">

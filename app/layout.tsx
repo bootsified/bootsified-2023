@@ -86,7 +86,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           <Loader />
           <Progress />
         </UIProvider>
-        <SeattleBadge />
+        {/* <SeattleBadge /> */}
         <Header className={styles.header} />
         <Nav className={styles.nav} />
         <main className={styles.main}>{children}</main>
