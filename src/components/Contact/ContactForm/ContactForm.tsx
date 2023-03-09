@@ -1,8 +1,7 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import clsx from 'clsx'
-import { v4 as uuidv4 } from 'uuid'
 
 import Alert from '@/components/Alert'
 import Button from '@/components/Button'
