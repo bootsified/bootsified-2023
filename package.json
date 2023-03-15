@@ -24,7 +24,7 @@
     "eslint-config-next": "^13.1.6",
     "framer-motion": "^9.0.2",
     "get-youtube-id": "^1.0.1",
-    "next": "^13.1.7-canary.26",
+    "next": "^13.2.5-canary.3",
     "nprogress": "^0.2.0",
     "photoswipe": "^5.3.5",
     "pluralize": "^8.0.0",

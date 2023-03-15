@@ -55,7 +55,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-base);
-  font-stretch: 125%;
+  font-stretch: 115%;
   font-weight: 700;
   margin: 0 0 1em;
 }

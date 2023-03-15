@@ -25,12 +25,12 @@ const Nav = ({ className }: NavProps) => {
       <ul className={styles.list}>
         <li className={styles.item}>
           <Link href="/" className={pathname === '/' ? styles.isActive : ''} scroll={true}>
-            Home
+            <span data-label="Home">Home</span>
           </Link>
         </li>
         <li className={styles.item}>
           <Link href="/bio" className={pathname === '/bio' ? styles.isActive : ''} scroll={true}>
-            Bio
+            <span data-label="Bio">Bio</span>
           </Link>
         </li>
         <li className={styles.item}>
@@ -39,7 +39,7 @@ const Nav = ({ className }: NavProps) => {
             className={pathname?.includes('/work') ? styles.isActive : ''}
             scroll={true}
           >
-            Work
+            <span data-label="Work">Work</span>
           </Link>
         </li>
         <li className={styles.item}>
@@ -48,7 +48,7 @@ const Nav = ({ className }: NavProps) => {
             className={pathname === '/contact' ? styles.isActive : ''}
             scroll={true}
           >
-            Contact
+            <span data-label="Contact">Contact</span>
           </Link>
         </li>
       </ul>
