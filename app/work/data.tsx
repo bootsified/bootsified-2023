@@ -44,7 +44,7 @@ export const projects = [
     category: 'web-dev',
     agency: 'Boots',
     logo: '/images/work/logos/bootsified-logo.png',
-    screenshot: '/images/work/screenshots/boots2023-screenshot.jpg',
+    screenshot: '/images/work/screenshots/boots2023b-screenshot.png',
     url: '',
     media: '',
     mediaType: '',
