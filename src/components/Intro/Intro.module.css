@@ -24,9 +24,7 @@
   }
 
   & p {
-    @media screen and (min-width: 760px) {
-      font-size: 1.125rem;
-    }
+    font-size: 1.125rem;
 
     &:last-child {
       margin-bottom: 0;
