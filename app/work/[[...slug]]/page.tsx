@@ -23,7 +23,10 @@ const WorkPage = ({ params }: WorkProps) => {
   return (
     <>
       {activeSection?.description && (
-        <p dangerouslySetInnerHTML={{ __html: activeSection?.description }} />
+        <p
+          className={styles.introText}
+          dangerouslySetInnerHTML={{ __html: activeSection?.description }}
+        />
       )}
       <div className={styles.projects}>
         {filteredProjects.length ? (

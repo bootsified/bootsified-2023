@@ -7,11 +7,13 @@
   color: var(--text-reverse);
   cursor: pointer;
   display: inline-flex;
-  font-family: var(--font-heading);
+  font-family: var(--font-base);
   font-size: 1em;
-  font-weight: 400;
+  font-stretch: 75%;
+  font-weight: 500;
   height: 3em;
   justify-content: center;
+  letter-spacing: 0.04em;
   line-height: 1;
   outline: 2px dotted transparent;
   outline-offset: 2px;
@@ -19,6 +21,7 @@
   position: relative;
   text-align: center;
   text-decoration: none !important;
+  text-transform: uppercase;
   transition: all var(--hover-duration) ease;
   user-select: none;
   vertical-align: middle;

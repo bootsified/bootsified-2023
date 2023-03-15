@@ -1,11 +1,11 @@
-import { Gochi_Hand, Righteous } from 'next/font/google'
+import { Gochi_Hand, Poppins } from 'next/font/google'
 
-export const righteous = Righteous({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-heading',
-})
+// export const righteous = Poppins({
+//   weight: ['500', '600'],
+//   subsets: ['latin'],
+//   display: 'swap',
+//   variable: '--font-heading',
+// })
 
 export const gochiHand = Gochi_Hand({
   weight: ['400'],
@@ -13,3 +13,11 @@ export const gochiHand = Gochi_Hand({
   display: 'swap',
   variable: '--font-hand',
 })
+
+// Display font possibilities:
+//	Bakbak_One
+//	Lalezar
+// Poppins - letter-spacing: -0.05em; weight: 600;
+// Inter - letter-spacing: -0.05em; weight: 700;
+// IBM Plex Sans - letter-spacing: -0.05em; weight: 700;
+// Urbanist - letter-spacing: -0.025em; weight: 700;

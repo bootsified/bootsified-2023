@@ -39,7 +39,7 @@
     width: 90vw;
   }
 
-  &::after {
+  /* &::after {
     background-image: url("/images/drips-lite.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -54,7 +54,7 @@
     @media screen and (min-width: 740px) {
       font-size: 1rem;
     }
-  }
+  } */
 
   &:focus {
     outline: none;

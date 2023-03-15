@@ -7,7 +7,7 @@
     font-size: 1.25rem;
   }
 
-  &::after {
+  /* &::after {
     background-image: url("/images/drips-pink.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -25,7 +25,7 @@
       left: 0;
       right: auto;
     }
-  }
+  } */
 }
 
 .list {

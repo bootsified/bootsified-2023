@@ -1,4 +1,8 @@
 .richText {
+  @media screen and (min-width: 760px) {
+    font-size: 1.125em;
+  }
+
   & a:not(:has(span)) {
     outline: 2px solid transparent;
 

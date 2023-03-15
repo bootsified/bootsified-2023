@@ -12,7 +12,7 @@
 }
 
 .heading {
-  font-size: clamp(2.5rem, 7vw, 4rem);
+  font-size: clamp(2.25rem, 7vw, 3rem);
   line-height: 1;
   margin-bottom: 2.5rem;
 }
@@ -34,7 +34,7 @@
     margin: 0 0 3rem 1rem;
   }
 
-  &::before {
+  /* &::before {
     background-image: url("/images/drips-white.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -48,7 +48,7 @@
     transform: translateX(-50%);
     width: 8.625rem;
     z-index: -1;
-  }
+  } */
 
   & img {
     border: 1em solid #fff;
@@ -74,7 +74,7 @@
     margin-top: 3rem;
   }
 
-  &::before {
+  /* &::before {
     background-image: url("/images/drips-white.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -92,7 +92,7 @@
       left: 10%;
       right: auto;
     }
-  }
+  } */
 
   & img {
     border: 0.75em solid #fff;

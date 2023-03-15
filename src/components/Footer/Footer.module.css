@@ -12,7 +12,7 @@
     background-size: 5rem;
   }
 
-  &::after {
+  /* &::after {
     background-image: url("/images/drips-lite.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -31,13 +31,13 @@
       left: auto;
       right: 20%;
     }
-  }
+  } */
 
-  &.pinkDrips {
+  /* &.pinkDrips {
     &::after {
       background-image: url("/images/drips-pink.svg");
     }
-  }
+  } */
 }
 
 .container {

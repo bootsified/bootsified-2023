@@ -25,7 +25,7 @@
 
   & p {
     @media screen and (min-width: 760px) {
-      font-size: 1.125em;
+      font-size: 1.125rem;
     }
 
     &:last-child {
@@ -60,7 +60,7 @@
   max-width: 20.5rem;
   position: relative;
 
-  &::before {
+  /* &::before {
     background-image: url("/images/drips-white.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -74,7 +74,7 @@
     transform: translateX(-50%);
     width: 8.625rem;
     z-index: -1;
-  }
+  } */
 
   & img {
     border: 1em solid #fff;

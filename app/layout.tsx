@@ -10,7 +10,7 @@ import { UIProvider } from '@/context/UIContext'
 import { SITE_URL } from '@/utils/constants'
 
 import { AnalyticsWrapper } from './analytics'
-import { gochiHand, righteous } from './fonts'
+import { gochiHand } from './fonts'
 
 import '@styles/globals.css'
 import styles from '@styles/RootLayout.module.css'
@@ -79,7 +79,7 @@ import styles from '@styles/RootLayout.module.css'
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en" className={`${gochiHand.variable} ${righteous.variable}`}>
+    <html lang="en" className={`${gochiHand.variable}`}>
       <head />
       <body className={styles.body}>
         <UIProvider>

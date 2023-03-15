@@ -3,7 +3,7 @@
   color: var(--text-reverse);
   position: relative;
 
-  &::after {
+  /* &::after {
     background-image: url("/images/drips-dark.svg");
     background-repeat: no-repeat;
     content: " ";
@@ -18,7 +18,7 @@
     @media screen and (min-width: 740px) {
       display: block;
     }
-  }
+  } */
 }
 
 .container {
