@@ -41,7 +41,11 @@ const Contact = () => {
               </Link>
             </li>
             <li>
-              <a className={styles.link} href="/pdf/john-boots-highland-resume-2023.pdf" download>
+              <a
+                className={styles.link}
+                href="/pdf/john-boots-highland-resume-2023.pdf?v=03162023"
+                download
+              >
                 <PDFIcon />
                 <span>John &ldquo;Boots&rdquo; Highland Resumé</span>
               </a>
