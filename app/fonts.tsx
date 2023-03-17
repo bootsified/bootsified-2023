@@ -1,11 +1,11 @@
-import { Gochi_Hand, Poppins } from 'next/font/google'
+import { Gochi_Hand, IBM_Plex_Sans_Condensed } from 'next/font/google'
 
-// export const righteous = Poppins({
-//   weight: ['500', '600'],
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-heading',
-// })
+export const ibmPlexSansCondensed = IBM_Plex_Sans_Condensed({
+  weight: ['600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-heading',
+})
 
 export const gochiHand = Gochi_Hand({
   weight: ['400'],
