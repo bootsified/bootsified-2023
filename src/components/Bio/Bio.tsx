@@ -13,9 +13,9 @@ import richStyles from '@styles/rich-text.module.css'
 
 const Bio = () => {
   return (
-    <div className={clsx(styles.container, richStyles.richText)}>
+    <div className={clsx(styles.container)}>
       <h1 className={styles.heading}>A little about me...</h1>
-      <div className={styles.content}>
+      <div className={clsx(styles.content, richStyles.richText)}>
         <div className={styles.headerImage}>
           <Image
             src={photoKid}
@@ -40,15 +40,53 @@ const Bio = () => {
           ) and a couple years in Austin for a job, I’ve lived here ever since.
         </p>
 
+        <h2>As a web developer...</h2>
+
         <p>
-          As a web developer, I specialize in advanced HTML/CSS layouts that are cross-browser,
-          accessible, and responsive to any device size. I’m experienced with vanilla JavaScript,
-          and have become very familiar with React components and Next.js over the last couple
-          years. I’ve also had significant real-world experience running a large eCommerce site
-          (Shopify), as the Sr Manager of Web Development for the performance menswear company,
-          Mizzen+Main. In my 4.5 years with Mizzen, we ran into all kinds of ups and downs, and I
-          was always able to get us across the finish line. It’s been a rocky relationship at times,
-          but I definitely know Shopify.
+          I specialize in advanced HTML/CSS layouts that are cross-browser, accessible, and
+          responsive to any device size. I’m experienced with vanilla JavaScript, and have become
+          very familiar with React components and Next.js over the last couple years.
+        </p>
+
+        <p>In a nutshell, I’m a huge lover of the “pretty side” of front-end dev. I love:</p>
+        <ul>
+          <li>CSS as a (programming?) language</li>
+          <li>finding creative ways to layout a difficult design</li>
+          <li>
+            making a layout perfectly respond to everything from a watch to a giant studio display
+          </li>
+          <li>finding subtle ways to wow a user with animation/transitions</li>
+          <li>marking up a site in a way that works, even without the CSS</li>
+          <li>semantic markup (I’m a hopeless rule-follower)</li>
+          <li>
+            basically, anything involving the{' '}
+            <Link
+              href="https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/"
+              target="_blank"
+            >
+              Front-of-the-Front-End
+            </Link>{' '}
+            (including JS)
+          </li>
+        </ul>
+
+        <p>
+          That said, I can also get me hands dirty. Most of my career (2004-2018) has been in the
+          design agency trenches, building client sites start to finish. The first ~7 years building
+          advanced, immersive Flash experiences, then mostly LAMP stack CMS jobs (ExpressionEngine
+          back in the day, then CraftCMS) and some straight PHP sites. Recently, I ran a large
+          Shopify store &mdash; tons of Liquid templating initially &mdash; but we eventually
+          (finally!) moved to a React/Next.js/headless CMS setup. Now that I‘ve had a couple years
+          of building React components (&hearts; CSS modules &hearts;), I’ve come to really love it
+          &mdash; especially with Next.js and Vercel. That’s my go-to now.
+        </p>
+
+        <p>
+          I’ve also had significant real-world experience running a large eCommerce site (Shopify),
+          as the Sr Manager of Web Development for the performance menswear company, Mizzen+Main. In
+          my 4.5 years with Mizzen, we ran into all kinds of ups and downs, and I was always able to
+          get us across the finish line. It’s been a rocky relationship at times, but I definitely
+          know Shopify.
         </p>
 
         <p>
@@ -68,15 +106,17 @@ const Bio = () => {
           </em>
         </p>
 
+        <h2>As a musician...</h2>
+
         <p>
-          As a musician, I’ve been primarily a bass guitarist for {spanBass()} years, and I toured
-          professionally with various rock bands for nearly 15 years of that. In addition to bass
-          guitar, I also play acoustic bass, guitar, drums, and cello (my first instrument); and
-          have experience with synth programming and studio mixing and producing - mostly with Logic
-          Pro. Music has taken a back seat for me, since web development took over, but I still try
-          to get back to it from time to time. I actually have{' '}
-          <Link href="/work/music">an album of my own</Link> in the works that will hopefully see
-          the light of day sometime in 2023. I’ll keep you posted.
+          I’ve been primarily a bass guitarist for {spanBass()} years, and I toured professionally
+          with various rock bands for nearly 15 years of that. In addition to bass guitar, I also
+          play acoustic bass, guitar, drums, and cello (my first instrument); and have experience
+          with synth programming and studio mixing and producing - mostly with Logic Pro. Music has
+          taken a back seat for me, since web development took over, but I still try to get back to
+          it from time to time. I actually have <Link href="/work/music">an album of my own</Link>{' '}
+          in the works that will hopefully see the light of day sometime in 2023. I’ll keep you
+          posted.
         </p>
 
         <div className={styles.footerImage}>

@@ -3,6 +3,19 @@
     font-size: 1.125em;
   }
 
+  & > *:not(div) {
+    margin-bottom: 0;
+  }
+
+  & > * + *:not(div) {
+    margin-top: 1.25em;
+  }
+
+  & h2 {
+    font-size: clamp(1.75rem, 5vw, 2.25rem);
+    line-height: 1.2;
+  }
+
   & a:not(:has(span)) {
     outline: 2px solid transparent;
 
@@ -15,5 +28,13 @@
 
   & em {
     font-style: oblique;
+  }
+
+  & ul {
+    padding-left: 1.5em;
+
+    & li {
+      margin-bottom: 0.5em;
+    }
   }
 }
