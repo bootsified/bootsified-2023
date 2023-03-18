@@ -127,7 +127,7 @@ export const projects = [
     skills: ['HTML', 'CSS', 'JS', 'CraftCMS', 'Twig'],
     notes:
       "<p>The last website I built while I was at Good Work was for a design agency in Austin, called <strong>Canales & Co</strong>.  They specialize in product branding, with much of their work in the beverage industry. I absolutely LOVE these guys.  SO creative, and simply beautiful designs.</p>\
-      <p>They knew what they wanted for a website, but came to us to build it.  So, I took their designs and built a custom content-managed website, using CraftCMS.  I wanted to make it so they could easilyn keep it updated with their latest work, so I put a lot of time into the CMS.  This project was almost 100% photography, with a complex masonry layout.  CraftCMS's customizeable content blocks really came in handy here.</p>\
+      <p>They knew what they wanted for a website, but came to us to build it.  So, I took their designs and built a custom content-managed website, using CraftCMS.  I wanted to make it so they could easily keep it updated with their latest work, so I put a lot of time into the CMS.  This project was almost 100% photography, with a complex masonry layout.  CraftCMS's customizeable content blocks really came in handy here.</p>\
       <p>The Canales & Co website is still one of my all-time favorites, and I'd love to be able to work with their designs again sometime in the future.  Go check them out!</p>",
   },
   {
