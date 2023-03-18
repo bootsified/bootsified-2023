@@ -55,6 +55,10 @@ export default function ProgressBar() {
       if (targetUrl !== currentUrl) {
         setIsNavigating(true)
         NProgress.start()
+
+        setTimeout(() => {
+          setIsNavigating(false)
+        }, 7000)
       }
     }
 

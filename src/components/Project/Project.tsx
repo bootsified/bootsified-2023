@@ -84,7 +84,8 @@ const Project = ({ project }: ProjectProps) => {
                 />
               </div>
               <div className={styles.cta}>
-                <span>{ctaLabel}</span>
+                <span className={styles.ctaLive}>{url !== '' && <>Live!</>}</span>
+                <span className={styles.ctaLabel}>{ctaLabel}</span>
               </div>
             </div>
           </button>
