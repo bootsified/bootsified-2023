@@ -13,7 +13,7 @@ const Popup = () => {
       <div className={richStyles.richText}>
         <p className={styles.paragraph}>
           I&rsquo;m currently seeking a new{' '}
-          <strong>front-end development/eCommerce site manager</strong> position. If you&rsquo;re
+          <strong>Senior Front-End / Principal UI/UX Engineer</strong> position. If you&rsquo;re
           here to check out my web work, or grab my resume, please use the links below. If you think
           I&rsquo;d be a good fit for your company, please <Link href="/contact">let me know</Link>.
           Thanks!
