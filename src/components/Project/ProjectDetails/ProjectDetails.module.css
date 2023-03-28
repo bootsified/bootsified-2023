@@ -175,6 +175,8 @@
 }
 
 .notes {
+  padding-bottom: 2rem;
+
   & em {
     font-style: oblique;
   }
