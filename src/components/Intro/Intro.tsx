@@ -1,33 +1,33 @@
-'use client'
+// 'use client'
 
 import React, { useEffect, useState } from 'react'
 import Button from '@components/Button'
-import Modal from '@components/Modal'
-import Popup from '@components/Popup'
+// import Modal from '@components/Modal'
+// import Popup from '@components/Popup'
 import photo from '@public/images/john-boots-highland-unicorns.jpg'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { ALWAYS_POPUP, MY_LOCATION } from '@/utils/constants'
+// import { ALWAYS_POPUP, MY_LOCATION } from '@/utils/constants'
 import { spanBass, spanWeb, thisYear } from '@/utils/helpers'
 
 import styles from './Intro.module.css'
 import richStyles from '@styles/rich-text.module.css'
 
 const Intro = () => {
-  const [open, setOpen] = useState(false)
+  // const [open, setOpen] = useState(false)
 
   // console.log('spanWeb', spanWeb())
 
-  useEffect(() => {
-    if (!sessionStorage.getItem('visited') || ALWAYS_POPUP === 'true') {
-      sessionStorage.setItem('visited', 'true')
-      setTimeout(() => {
-        setOpen(true)
-      }, 3000)
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (!sessionStorage.getItem('visited') || ALWAYS_POPUP === 'true') {
+  //     sessionStorage.setItem('visited', 'true')
+  //     setTimeout(() => {
+  //       setOpen(true)
+  //     }, 3000)
+  //   }
+  // }, [])
 
   return (
     <>
@@ -50,7 +50,7 @@ const Intro = () => {
               </Button>
             </Link>
 
-            <Modal
+            {/* <Modal
               open={open}
               onOpenChange={() => {
                 setOpen(!open)
@@ -64,7 +64,7 @@ const Intro = () => {
               tinyDots
             >
               <Popup />
-            </Modal>
+            </Modal> */}
           </p>
         </div>
         <div className={styles.image}>
