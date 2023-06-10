@@ -39,10 +39,7 @@ const Footer = ({ className }: FooterProps) => {
           <span title="AKA love" className={styles.heart}>
             &hearts;
           </span>{' '}
-          in{' '}
-          <span className="toolTip" data-tooltip="Moving to Seattle 06/23" tabIndex={0}>
-            Dallas, TX
-          </span>
+          in Seattle
         </p>
       </div>
     </footer>

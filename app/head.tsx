@@ -7,7 +7,7 @@ import DefaultTags from './default-tags'
 const Head = () => {
   const title = 'Web Development, Bass Guitar, and Much More - John "Boots" Highland'
   const description =
-    'The online home for John "Boots" Highland - a Dallas-based bass guitarist, web developer, husband and father.'
+    'The online home for John "Boots" Highland - a Seattle-based bass guitarist, web developer, husband and father.'
   const url = ''
 
   return (

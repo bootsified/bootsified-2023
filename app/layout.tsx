@@ -21,7 +21,7 @@ import styles from '@styles/RootLayout.module.css'
 
 // const pageTitle = `Web Development, Bass Guitar, and Much More`
 // const pageDescription =
-//   "The personal landing page for John 'Boots' Highland - a Dallas-based bass guitarist, web developer, husband and father."
+//   "The personal landing page for John 'Boots' Highland - a Seattle-based bass guitarist, web developer, husband and father."
 // const url = ''
 
 // export const metadata = {
