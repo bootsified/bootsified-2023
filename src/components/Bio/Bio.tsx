@@ -29,7 +29,7 @@ const Bio = () => {
           <strong>“Boots”</strong> - long story. I’m a web developer, musician, husband, and father
           of two awesome boys, currently living in the Seattle area. I was born in Cincinnati, OH,
           but my family moved to Dallas, TX, when I was two. In Dallas, I grew up, went to school,
-          played in multiple bands, strated a web developer career, found a wife, and birthed a
+          played in multiple bands, started a web developer career, found a wife, and birthed a
           couple sons. In 2023, we finally said goodbye to the brutal Texas Summers, and said hello
           to the Pacific Northwest. The new chapter begins...
         </p>
