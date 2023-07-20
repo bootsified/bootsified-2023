@@ -58,47 +58,88 @@
     vertical-align: top;
     z-index: 0;
 
-    @nest [data-whatintent="mouse"] &:hover, &.isActive {
-      background-color: var(--gray-10);
+    /* Safari only */
+    @supports (background: -webkit-named-image(i)) {
+      @nest [data-whatintent="mouse"] &:hover, &.isActive {
+        & span {
+          transform: translateY(-100%);
+        }
+      }
+
+      & span,
+      & span::after {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        padding: 0 1em;
+        transition: all 250ms var(--ease-in-out-quad);
+        width: 100%;
+      }
 
       & span {
-        background-color: var(--gray-10);
-        color: var(--gray-5);
-        transform: translateZ(-45px) rotateX(90deg);
+        pointer-events: none;
+        position: relative;
+        transform-origin: 50% 0%;
 
         &::after {
           background-color: var(--gray-10);
+          color: white;
+          content: attr(data-label);
+          left: 0;
+          position: absolute;
+          top: 0;
+          transform: translateY(100%);
+          transform-origin: 50% 0%;
+          white-space: nowrap;
         }
       }
     }
 
-    & span,
-    & span::after {
-      align-items: center;
-      display: flex;
-      height: 100%;
-      justify-content: center;
-      padding: 0 1em;
-      transition: all 250ms var(--ease-in-out-quad);
-      width: 100%;
-    }
-
-    & span {
-      pointer-events: none;
-      position: relative;
-      transform-origin: 50% 0%;
-      transform-style: preserve-3d;
-
-      &::after {
+    /* Everyone else */
+    @supports not (background: -webkit-named-image(i)) {
+      @nest [data-whatintent="mouse"] &:hover, &.isActive {
         background-color: var(--gray-10);
-        color: white;
-        content: attr(data-label);
-        left: 0;
-        position: absolute;
-        top: 0;
-        transform: translateY(105%) rotateX(-90deg);
+
+        & span {
+          background-color: var(--gray-10);
+          color: var(--gray-5);
+          transform: translateZ(-45px) rotateX(90deg);
+
+          &::after {
+            background-color: var(--gray-10);
+          }
+        }
+      }
+
+      & span,
+      & span::after {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        padding: 0 1em;
+        transition: all 250ms var(--ease-in-out-quad);
+        width: 100%;
+      }
+
+      & span {
+        pointer-events: none;
+        position: relative;
         transform-origin: 50% 0%;
-        white-space: nowrap;
+        transform-style: preserve-3d;
+
+        &::after {
+          background-color: var(--gray-10);
+          color: white;
+          content: attr(data-label);
+          left: 0;
+          position: absolute;
+          top: 0;
+          transform: translateY(105%) rotateX(-90deg);
+          transform-origin: 50% 0%;
+          white-space: nowrap;
+        }
       }
     }
 
