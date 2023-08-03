@@ -140,13 +140,14 @@ export const projects = [
     agency: 'Boots',
     logo: '/images/work/logos/vale-logo.png',
     screenshot: '/images/work/screenshots/vale-screenshot.jpg',
-    url: 'http://valecounseling.com',
+    url: 'https://valecounseling.boots.media/',
     media: '',
     mediaType: '',
     skills: ['HTML', 'CSS', 'JS', 'CraftCMS', 'Twig', 'Website Design', 'Logo Design'],
     notes:
       "<p>This was kind of a fun &ldquo;passion project&rdquo; for my wife's former counseling practice. It's several years old now, but it's still a favorite of mine, and still serves the practice well.</p>\
-    <p>I handled everything from design to development - even helping them with a new logo - and it's got a super nice, fully custom CMS, built with CraftCMS. I'm really proud of this one.</p>",
+    <p>I handled everything from design to development - even helping them with a new logo - and it's got a super nice, fully custom CMS, built with CraftCMS. I'm really proud of this one.</p>\
+    <p>They recently changed their website, so for my portfolio purposes, the link here is to a staging version of the site I built.</p>",
   },
   {
     id: 'adopted',
